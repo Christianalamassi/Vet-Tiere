@@ -2,9 +2,11 @@ from django.db import models
 
 # Create your models here.
 class patient(models.Model):
-    name = models.CharField(max_length=50, unique=True)
+    full_name = models.CharField(max_length=50, unique=True)
     type = models.CharField(max_length=50, unique=True)
-   # date_of_birth
+    # date_of_birth
 
     def __str__(self):
         return self.name
+
+#class book(models.Model):
