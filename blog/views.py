@@ -20,6 +20,3 @@ def booking(request):
         message = request.POST['']
 
     return render(request, "blog/book.html")
-
-def timetable(request):
-    return render(request, 'blog/index.html')
