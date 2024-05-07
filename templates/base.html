@@ -1,4 +1,8 @@
 {% load static %}
+{% url 'home' as home_url %}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %}
+{% url 'account_logout' as logout_url %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +19,7 @@
     <script src="https://kit.fontawesome.com/5ed6547b6c.js" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css.style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <title>Vet Tiere</title>
 </head>
