@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Post
+from .models import user_info
 from django.http import HttpResponse
 # Create your views here.
 
@@ -18,14 +18,24 @@ def sign(request):
 
 # log-in page
 def login(request):
-    #if request == POST:
+    if request.method == 'POST':
+        fnames = request.POST['fname']
+        passwords= request.POST['password']
         return render(request, "blog/login.html")
+    else:
+        request.HttpResponse("your inter is incorrect! try agian.")
 
 #Users page
-def booking(request):
+def user(request):
     if request.method == 'POST':
-        day = request.POST['']
-        time = request.POST['']
-        message = request.POST['']
+        fnames = request.POST['fname']
+        dates = request.POST['date']
+        times = request.POST['time']
 
-    return render(request, "blog/user.html")
+        return render(request, "blog/user.html", {'dates' : dates})
+    else :
+        request.HttpResponse("your inter is incorrect! try agian.")
+        
+
+def appointment(request):
+    return render(request, 'blog/appointment.html')

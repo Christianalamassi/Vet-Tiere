@@ -10,6 +10,13 @@
 }
 
 
+body {
+    background: url("../images/paw-print-941498_640.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*header style*/
 .navbar {
     background-color: rgb(224, 205, 205);
@@ -20,14 +27,7 @@
     margin-bottom: 10px;
 }
 
-/*submission section*/
 
-form {
-    float: left;
-    width: 30%;
-    padding: 30px 10px;
-    display: block
-}
 
 /*about page*/
 /*photo of doctors*/
@@ -62,17 +62,21 @@ span {
     font-style: italic;
 }
 
-/*signin page*/
+/*Form styling*/
 
-#sign-up label {
-    font-size: large;
-    font-family: fantasy;
-    letter-spacing: 3px;
-    display: flex;
-    color: #ffffff;
+form {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: auto 10vw;
 }
 
-#sign-up input {
+label {
+    font-size: large;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+input {
     border: 2px solid black;
     font-weight: 200;
     line-height: 25px;
@@ -80,16 +84,33 @@ span {
     padding: 2px 10px;
 }
 
-#sign-up input:focus {
+input:focus {
     border: 5px double;
 }
 
-#sign-up-news {
-    float: right;
-    padding: 5px;
-    width: 35%;
-    height: 300px;
-    border-radius: 100px;
+a {
+    padding: 0px 25px;
+}
+
+#submit #reset {
+    font-size: 18px;
+}
+
+/*footer style*/
+footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-large;
+    background-color: rgb(224, 205, 205);
+    height: 20vh;
+    margin-top: 7px;
+}
+
+/*Hover.css*/
+a:hover {
+    box-shadow: 0 8px 8px 0 rgb(145, 139, 139), 0 1px 10px 0 rgb(96, 1, 1);
 }
 
 #submit:hover,
@@ -97,21 +118,15 @@ span {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 01), 0 17px 50px 0 rgba(0, 0, 0, 1);
 }
 
-footer {
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: x-large;
-    background-color: rgb(224, 205, 205);
-}
+/*signin page*/
 
-a:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 01), 0 17px 50px 0 rgba(0, 0, 0, 1);
+.signin {
+    text-align: center;
 }
 
 /*login page*/
 
 .login {
     text-align: center;
+    margin: 120px 20vw;
 }
