@@ -10,14 +10,91 @@
 }
 
 
-
+/*header style*/
 .navbar {
     background-color: rgb(224, 205, 205);
     line-height: 35px;
-    position: fixed;
     z-index: 99;
     width: 100%;
     display: flex;
+    margin-bottom: 10px;
+}
+
+/*submission section*/
+
+form {
+    float: left;
+    width: 30%;
+    padding: 30px 10px;
+    display: block
+}
+
+/*about page*/
+/*photo of doctors*/
+.doctor-john {
+    background: url("../images/pexels-ifaw-5486965.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    margin: 5px;
+    object-fit: contain;
+    overflow: hidden;
+    position: relative;
+}
+
+.doctor-jack {
+    background: url("../images/pexels-sam-lion-5733422.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    margin: 5px;
+    object-fit: contain;
+    overflow: hidden;
+    position: relative;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #070707;
+    font-style: italic;
+}
+
+/*signin page*/
+
+#sign-up label {
+    font-size: large;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    display: flex;
+    color: #ffffff;
+}
+
+#sign-up input {
+    border: 2px solid black;
+    font-weight: 200;
+    line-height: 25px;
+    font-size: large;
+    padding: 2px 10px;
+}
+
+#sign-up input:focus {
+    border: 5px double;
+}
+
+#sign-up-news {
+    float: right;
+    padding: 5px;
+    width: 35%;
+    height: 300px;
+    border-radius: 100px;
+}
+
+#submit:hover,
+#reset:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 01), 0 17px 50px 0 rgba(0, 0, 0, 1);
 }
 
 footer {
@@ -30,6 +107,11 @@ footer {
 }
 
 a:hover {
-    box-shadow: 0 12px 16px 0 rgb(156, 156, 150), 0 17px 50px 0 rgb(186, 185, 188);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 01), 0 17px 50px 0 rgba(0, 0, 0, 1);
+}
 
+/*login page*/
+
+.login {
+    text-align: center;
 }
