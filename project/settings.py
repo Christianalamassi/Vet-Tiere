@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ['8000-christianalamass-pp4-bsgxxnbcr4w.ws-eu111.gitpod.io',
-'.herokuapp.com']
+'ppfour.herokuapp.com']
 
 
 # Application definition
@@ -42,12 +42,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'cloudinary_storage',
     'cloudinary',
     'blog',
     'templates',
