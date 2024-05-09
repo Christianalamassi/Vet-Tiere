@@ -1,25 +1,16 @@
 {% extends "base.html" %}
 {% block content%}
 
-<section>
-    <form id="appointment" method="POST" action="{% url 'user' %}">
-        {%csrf_token%}
-        <div class="row">
-            <div class="clo-12"></div>
-            <label for="date">select day:</label><br>
-            <input type="date" name="date" id="date"><br>
-            <select class="from-control" name="time">
-                <option value="schedule"> Schedule you appointment</option>
-                <option value="8 AM to 10 AM"> 8:00 - 10:00</option>
-                <option value="10 AM to 12 AM"> 10:00 - 12:00</option>
-                <option value="13 PM to 15 PM"> 13:00 - 15:00</option>
-                <option value="15 PM to 17 PM"> 15:00 - 17:00</option>
-            </select>
-            <input type="submit" id="submit" value="Submit"><br>
-            <input type="reset" id="reset" value="Clean">
-        </div>
-    </form>
-</section>
+<div class="main_text">
+    <h2>Vet Tiere</h2>
+    <p>Vet Tiere is a prestigious center of research in veterinary medicine and veterinary
+        care services. It is one of ten five clincs in London offering veterinary DBFC and physical therapy for all
+        animls.
+        The research
+        activities of Vet Tiere’s 200 clinical units take an interdisciplinary approach and are part of
+        a worldwide network.
+    </p>
+</div>
 
 
 {%endblock%}
