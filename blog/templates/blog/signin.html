@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block content%}
 <div id="sign-up">
-
-
-    <form method="GET" action="reply.html" class="signin">
+    <form method="POST" action="{%url 'message' %}" class="signin">
         {%csrf_token%}
-        <label for="Full name">First name:</label><br>
+        <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" placeholder="Type full name" required><br><br>
+
+        <label for="username">User name:</label><br>
+        <input type="text" id="username" name="username" placeholder="Type User nme" required><br><br>
 
         <label for="pass">Password:</label><br>
         <input type="password" id="pass" name="pass" placeholder="Type password" required><br><br>
