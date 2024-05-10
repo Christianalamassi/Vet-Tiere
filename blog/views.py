@@ -1,5 +1,6 @@
-from django.shortcuts import render
-#from .models import user_info
+from django.shortcuts import render, get_object_or_404
+from .models import userInfo
+from django.views import generic
 from django.http import HttpResponse
 # Create your views here.
 
@@ -12,21 +13,23 @@ def about(request):
     return render(request, 'blog/about.html')
 
 #sign in page
-def sign(request):
+def singup(request):
     if request.method == 'POST':
-        fnams = request.POST['fname']
-        usernames = request.POST['username']
-        emails = request.POST['email']
-        phones = request.POST['phone']
+        nams = request.POST['name']
+        user_names = request.POST['user_name']
+        E_mails = request.POST['E_maill']
+        #phones = request.POST['phone']
 
         return render(request, "blog/message.html", {
-            'fnames' : fnames,
-            'usernames' : usernames,
-            'emails'  :emails,
-            'phones' : phones,
+            'names' : names,
+            'user_names' : user_names,
+            'E_mails'  :E_mails,
+            #'phones' : phones,
             })
+        return render(request, 'blog/message.html')
     else:
-        return render(request, "blog/signin.html")
+        return render(request, 'blog/singup.html')
+        
    
 #message appears when whaen the user sign up
 def message(request):
@@ -39,15 +42,20 @@ def login(request):
         passwords= request.POST['password']
         return render(request, "blog/login.html")
     else:
-        return render(request, "blog/index.html")
+        return render(request, "blog/login.html")
 
 #Users page
 def user(request):
-    dates = request.POST['date']
-    times = request.POST['time']
-    return render(request, "blog/user.html")
-        
-
+    models = userInfo
+    if request.method == 'POST':
+        appointments = request.POST['appointment']
+        times = request.POST['times']
+        return render(request, "blog/message.html",{
+            'appointments' : appointments,
+            'times' : times})
+    else:
+        return render(request, "blog/user.html")
+            
 def appointment(request):
-    return render(request, 'blog/appointment.html')
+    return render(request, 'blog/appointment.html')     
 

@@ -34,6 +34,22 @@ body {
     margin: 20vh 20vw;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.4);
+
+    /* animates added */
+    animation-name: main_text;
+    animation-duration: 7s;
+    animation-fill-mode: backwards;
+}
+
+/* her is zoom mainText in main page */
+@keyframes main_text {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 /*about page*/
