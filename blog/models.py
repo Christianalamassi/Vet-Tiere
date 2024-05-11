@@ -7,6 +7,7 @@ from cloudinary.models import CloudinaryField
 class userInfo(models.Model):
   appointment = models.DateField(blank=True, null=True)
   time = models.DateField(blank=True, null=True)
+  text = models.TextField(blank=True)
 
   def __str__(self):
     return self.appointment.count()
