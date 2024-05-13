@@ -6,4 +6,5 @@ urlpatterns = [
     path('message',views.message, name='message'),
     path('about',views.about, name='about'),
     path('userpage',views.user, name='user'),
+
    ]

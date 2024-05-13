@@ -5,9 +5,10 @@ from django.contrib.auth.models import User
 
 class userInfo(models.Model):
   kind_of_the_pet = models.CharField(max_length=50, null=False, blank=False)
-  appointment = models.DateField(blank=False, null=False)
-  time = models.DateField(blank=False, null=False)
+  date = models.DateField(blank=False, null=False)
+  time = models.TimeField(blank=False, null=False)
   text = models.TextField(blank=True)
+  
 
   def __str__(self):
     return self.kind_of_the_pet

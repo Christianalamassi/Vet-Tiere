@@ -15,6 +15,10 @@ def about(request):
 
 #Users page
 def user(request):
+    userInfos = userInfo.objects.all()
+    context = {
+        'userInfos':userInfos
+    }
     models = userInfo
     if request.method == 'POST':
         dates = request.POST['date']
@@ -23,7 +27,10 @@ def user(request):
             'dates' : dates,
             'times' : times})
     else:
-        return render(request, "blog/user.html")
+        return render(request, "blog/user.html",context)
 
 def message(request):
     return render(request, 'blog/message.html')     
+
+
+

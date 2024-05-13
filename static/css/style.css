@@ -27,8 +27,11 @@ body {
     margin-bottom: 10px;
 }
 
+
+
 /*index page*/
 .main_text {
+    padding: 25px;
     font-size: 24px;
     flex-wrap: nowrap;
     margin: 20vh 20vw;
@@ -57,10 +60,10 @@ body {
 /*photo of doctors*/
 .doctor-john {
     background: url("../images/pexels-ifaw-5486965.jpg");
-    background-position: center;
+
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 360px;
+    min-height: 600px;
     margin: 5px;
     object-fit: contain;
     overflow: hidden;
@@ -69,14 +72,19 @@ body {
 
 .doctor-jack {
     background: url("../images/pexels-sam-lion-5733422.jpg");
-    background-position: center;
+
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 360px;
+    min-height: 600px;
     margin: 5px;
-    object-fit: contain;
+    object-fit: cover;
     overflow: hidden;
     position: relative;
+}
+
+.dc {
+    background-color: rgba(255, 255, 255, 0.2);
+    ;
 }
 
 span {
@@ -123,13 +131,23 @@ a {
 /*footer style*/
 footer {
     padding: 10px;
-    display: flex;
     align-items: center;
-    justify-content: space-around;
-    font-size: x-large;
+    font-size: large;
     background-color: rgb(224, 205, 205);
     height: 20vh;
     margin-top: 7px;
+}
+
+/*The social-links*/
+
+.list-inline-item {
+    margin: 0px;
+    font-size: large;
+}
+
+.list-inline {
+    padding-left: 0px;
+    margin-top: 5vh;
 }
 
 /*Hover.css*/
