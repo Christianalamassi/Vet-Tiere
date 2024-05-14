@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ['8000-christianalamass-pp4-bsgxxnbcr4w.ws-eu111.gitpod.io',
-os.environ.get('HEROKU_HOSTNAME')]
+'git.heroku.com/ppfour.git']
 
 
 # Application definition
