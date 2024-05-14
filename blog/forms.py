@@ -7,7 +7,7 @@ class userform(forms.ModelForm):
     date = forms.DateField(widget=forms.DateInput(attrs={
         'id': 'datePicker', 'class': 'form-control', 'type': 'date'}))
 
-    name_of_the_pet = forms.CharField(widget=forms.TextInput(
+    pet_name = forms.CharField(widget=forms.TextInput(
                          attrs={'id': 'fullName', 'class': 'form-control',
                                 'type': 'text', }))
 
