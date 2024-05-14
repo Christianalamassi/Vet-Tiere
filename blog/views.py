@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import userInfo
 from django.views import generic
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 # Homepage
@@ -14,16 +15,14 @@ def about(request):
 
 
 #Users page
+@login_required
 def user(request):
-    userInfos = userInfo.objects.all()
-    context = {
-        'userInfos':userInfos
-    }
-    models = userInfo
     if request.method == 'POST':
-        dates = request.POST['date']
-        times = request.POST['time']
-        return render(request, "blog/message.html",{
+        form = userInfo(request.POST)
+        if form.is_valid():
+            dates = request.POST['date']
+            times = request.POST['time']
+            return render(request, "blog/message.html",{
             'dates' : dates,
             'times' : times})
     else:

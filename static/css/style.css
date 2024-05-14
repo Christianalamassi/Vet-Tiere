@@ -134,7 +134,7 @@ footer {
     align-items: center;
     font-size: large;
     background-color: rgb(224, 205, 205);
-    height: 20vh;
+    height: 35vh;
     margin-top: 7px;
 }
 
@@ -142,7 +142,7 @@ footer {
 
 .list-inline-item {
     margin: 0px;
-    font-size: large;
+    font-size: x-large;
 }
 
 .list-inline {
