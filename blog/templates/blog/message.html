@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content%}
-<div>
-
-    <p id="message">Thank you for booking an appointment on the {{dates}} at {{times}}</p>
-
-</div>
+<center id="messages">
+    <p class="message">Thank you for booking an appointment</p>
+    <p class="message">Your a appointment on the {{dates}} at {{times}}</p>
+    <p class="message">Your pet name is : {{pet_names}}</p>
+</center>
 
 
 {%endblock%}

@@ -20,16 +20,16 @@
         <form class="login" method="POST" action="{% url 'account_login' %}">
           {% csrf_token %}
 
-          <label for="login">Username:</label><br>
-          <input type="text" name="login" placeholder="Username" autocomplete="username" required id="login">
-          <label for="password">Password:</label><br>
+          <label for="id_login">Username:</label><br>
+          <input type="text" name="login" placeholder="Username" autocomplete="username" required id="id_login">
+          <label for="id_password">Password:</label><br>
           <input type="password" name="password" placeholder="Password" autocomplete="current-password" required
-            id="password">
+            id="id_password">
 
-          <input type="hidden" name="next" value="{% url 'user' %}" />
+          <input type="hidden" name="next" value="/booking_form/" />
 
-          <input type="submit" value="{% trans 'Log-in' %}">
-          <input type="reset" id="reset" value="{% trans 'Reset' %}">
+          <input type="submit" value="{% trans 'Sign In' %}">
+          <input type="reset" id="reset" value="Clean">
           <br>
           <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
         </form>

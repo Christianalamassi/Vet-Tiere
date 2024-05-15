@@ -14,11 +14,6 @@ def home(request):
 def about(request):
     return render(request, 'blog/about.html')
 
-
-@login_required
-def booking_page(request):
-    return redirect('user')
-
 #Users page
 @login_required
 def user(request):
@@ -32,7 +27,7 @@ def user(request):
         dates = request.POST['date']
         times = request.POST['time']
         #texts = request.POST['text']
-        messages.success(request, 'Reservation booked successfully!')
+        messages.success(request, 'You have booked an appointment successfully!')
         return render(request, "blog/message.html",{
             'pet_names' : pet_names,
             'dates' : dates,
