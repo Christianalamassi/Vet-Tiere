@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = "DEVELOPMENT" in os.environ
 
 ALLOWED_HOSTS = ['8000-christianalamass-pp4-bsgxxnbcr4w.ws-eu111.gitpod.io',
-'git.heroku.com/ppfour.git']
+'.herokuapp.com']
 
 
 # Application definition
