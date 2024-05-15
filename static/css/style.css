@@ -58,9 +58,8 @@ body {
 /*about page*/
 
 /*photo of doctors*/
-.doctor-john {
+.doctor-ava {
     background: url("../images/qqq.jpeg");
-
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
@@ -73,7 +72,18 @@ body {
 
 .doctor-jack {
     background: url("../images/ector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 500;
+    margin: 5px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
 
+.doctor-Annalise {
+    background: url("../images/vettsst.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -208,11 +218,10 @@ a:hover {
 /*message page*/
 .message {
     font-size: 24px;
-    margin: 10vh auto;
+    margin: 3vh auto;
     width: 50%;
     text-align: center;
-}
-
-#messages {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5vh 5vw;
+    line-height: 10vh;
 }
