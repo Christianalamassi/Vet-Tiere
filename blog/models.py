@@ -17,7 +17,7 @@ class userInfo(models.Model):
 ("14:00","14:00")
   }
   user =models.ForeignKey(
-        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True)
+        User, on_delete=models.CASCADE, blank=True)
   pet_name = models.CharField(max_length=50, null=False, blank=False)
   date = models.DateField(blank=False, null=False, auto_now_add=True)
   time = models.CharField(max_length=7, choices=time_options, null=False, blank=False)
