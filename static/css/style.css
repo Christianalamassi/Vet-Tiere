@@ -59,11 +59,12 @@ body {
 
 /*photo of doctors*/
 .doctor-john {
-    background: url("../images/pexels-ifaw-5486965.jpg");
+    background: url("../images/qqq.jpeg");
 
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 600px;
+    height: 350px;
+    width: 500px;
     margin: 5px;
     object-fit: contain;
     overflow: hidden;
@@ -71,11 +72,12 @@ body {
 }
 
 .doctor-jack {
-    background: url("../images/pexels-sam-lion-5733422.jpg");
+    background: url("../images/ector.jpg");
 
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 600px;
+    height: 300px;
+    width: 500;
     margin: 5px;
     object-fit: cover;
     overflow: hidden;
@@ -84,6 +86,9 @@ body {
 
 .dc {
     background-color: rgba(255, 255, 255, 0.2);
+    line-height: 7vh;
+    font-size: 24px;
+    font-style: italic;
     ;
 }
 
@@ -97,7 +102,6 @@ span {
 /*Form styling*/
 
 form {
-    background-color: rgba(255, 255, 255, 0.4);
     margin: auto 10vw;
 }
 
@@ -130,24 +134,36 @@ a {
 
 /*footer style*/
 footer {
-    padding: 10px;
+    padding-left: 10px;
     align-items: center;
     font-size: large;
     background-color: rgb(224, 205, 205);
-    height: 35vh;
+    height: 40vh;
     margin-top: 7px;
 }
 
 /*The social-links*/
 
+.social {}
+
 .list-inline-item {
-    margin: 0px;
+    margin: 10px;
     font-size: x-large;
 }
 
 .list-inline {
-    padding-left: 0px;
+    padding-bottom: 5vh;
     margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+h6 {
+    font-weight: 900;
+}
+
+.row {
+    margin-right: calc(0* var(--bs-gutter-x));
+    margin-left: calc(0* var(--bs-gutter-x));
 }
 
 /*Hover.css*/
@@ -173,7 +189,20 @@ a:hover {
     margin: 120px 20vw;
 }
 
-/*message page*/
-center {
+/*logout page*/
+#logout {
     background-color: rgba(255, 255, 255, 0.4);
+    font-size: 32px;
+    margin: 40vh auto;
+    width: 50%;
+    text-align: center;
+}
+
+/*message page*/
+message {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 32px;
+    margin: 40hv 20vw;
+    width: 50%;
+    text-align: center;
 }

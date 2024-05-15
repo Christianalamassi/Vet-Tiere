@@ -1,16 +1,11 @@
 {% extends "base.html" %}
 {% block content%}
 
-{% load i18n %}
-{% load account socialaccount %}
-
-
-
 <section>
     <form id=" appointment" method="POST" action="{% url 'user' %}">
         {%csrf_token%}
         <div class="row">
-            <div class="clo-12"></div>
+            <div class="col-6"></div>
             <label for="pet_name">You pet name:</label>
             <input type="'text" id="pet_name" name="pet_name">
 
@@ -25,15 +20,15 @@
                 <option value="10 AM"> 10:00</option>
                 <option value="11 AM"> 11:00</option>
                 <option value="12 PM"> 12:00</option>
-                <option value="1 PM to 14 PM"> 13:00</option>
+                <option value="1 PM"> 13:00</option>
                 <option value="2 PM"> 14:00</option>
             </select>
 
             <br>
+            <label for="text">Type a brief description here of your pet:</label>
+            <textarea name="text" rows="10" cols="13" placeholder="type here your description"></textarea>
 
-            <textarea name="message" rows="10" cols="13" placeholder="type here your description"></textarea>
-
-            <input type="submit" id="submit" value="Submit"><br>
+            <input type="submit" id="submit" value="Submit">
             <input type="reset" id="reset" value="Clean">
 
         </div>
