@@ -5,49 +5,21 @@
 {% block head_title %}{% trans "Signup" %}{% endblock head_title %}
 
 {% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+<div class='sign_up'>
+  <h1>{% trans "Sign Up" %}</h1>
 
-<p>{% blocktrans %}If you have already an account with us, please <a href="{{ login_url }}">sign
-    in</a>.{% endblocktrans %}</p>
+  <p>{% blocktrans %}If you have already an account with us, please <a href="{{ login_url }}">sign
+      in</a>.{% endblocktrans %}</p>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
 
-  {% endif %}
-  <input type="submit" id="submit" value="{% trans 'Sign Up' %}">
-  <input type="reset" id="reset" value="{% trans 'Clean' %}">
-</form>
-
-{% endblock content %}
-
-
-
-<div id="sign-up">
-  <form method="POST" action="{%url 'message' %}" class="signin">
-    {%csrf_token%}
-    <label for="fname">Full name:</label><br>
-    <input type="text" id="fname" name="fname" placeholder="Type full name" required><br><br>
-
-    <label for="username">User name:</label><br>
-    <input type="text" id="username" name="username" placeholder="Type User nme" required><br><br>
-
-    <label for="pass">Password:</label><br>
-    <input type="password" id="pass" name="pass" placeholder="Type password" required><br><br>
-
-    <label for="confirmation">Confirm password:</label><br>
-    <input type="password" id="confirmation" name="confirmation" placeholder="Type agian the password" required><br><br>
-
-    <label for="email">E-mail:</label><br>
-    <input type="email" id="email" name="email" placeholder="Type emailf@zxy.com" required><br><br>
-
-    <label for="phon">Phone-Number:</label><br>
-    <input type="tel" id="phone" name="phone" placeholder="Type your phone-number"><br><br>
-    {%csrf_token%}
-    <input type="submit" id="submit" value="Submit">
-    <input type="reset" id="reset" value="Clean">
+    {% endif %}
+    <input type="submit" id="submit" value="{% trans 'Sign Up' %}">
+    <input type="reset" id="reset" value="{% trans 'Reset' %}">
   </form>
-
 </div>
+{% endblock content %}

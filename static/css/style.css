@@ -189,6 +189,12 @@ a {
     font-size: 18px;
 }
 
+/*sign-up page*/
+
+.sign_up {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 1.5vw;
+}
 
 /*signin page*/
 
@@ -206,8 +212,8 @@ a {
 /*logout page*/
 #logout {
     background-color: rgba(255, 255, 255, 0.4);
-    font-size: 32px;
-    margin: 40vh auto;
+    font-size: 30px;
+    margin: 30vh auto;
     width: 50%;
     text-align: center;
 }
