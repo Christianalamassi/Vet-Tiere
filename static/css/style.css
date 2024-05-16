@@ -46,7 +46,7 @@ footer {
 
 .list-inline-item {
     margin: 5px;
-    font-size: x-large;
+    font-size: 24px;
 }
 
 .list-inline {
@@ -63,7 +63,7 @@ h6 {
 }
 
 .social_media:hover {
-    color: rgb(50, 44, 10);
+    color: rgb(138, 119, 15);
 }
 
 /*index page*/
@@ -132,6 +132,8 @@ h6 {
     line-height: 5vh;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1vh;
+    padding: 2.5px;
 }
 
 
@@ -151,7 +153,7 @@ h6 {
 
 span {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
+    font-size: x-large;
     color: #070707;
     font-style: italic;
 }
@@ -159,7 +161,7 @@ span {
 /*Form styling*/
 
 form {
-    margin: auto 10vw;
+    margin: auto 15vw;
 }
 
 label {
@@ -239,4 +241,18 @@ a {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5vh 5vw;
     line-height: 10vh;
+}
+
+/*media queries to medium screen size from 1200px wide and down*/
+@media screen and (max-width:1200px) {
+    form {
+        margin: auto 9vw;
+    }
+}
+
+/*media queries to medium screen size from 700px wide and down*/
+@media screen and (max-width:700px) {
+    form {
+        margin: auto 0vw;
+    }
 }
