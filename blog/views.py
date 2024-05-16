@@ -41,6 +41,7 @@ def delete_booking(request, booking_id):
     booking = get_object_or_404(userInfo, id=booking_id, user=request.user)
     booking.delete()
    
-
-
+@login_required
+def appointment(request):
+    return render(request, 'blog/appointment.html')
 

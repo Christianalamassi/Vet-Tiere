@@ -17,6 +17,8 @@ body {
     background-size: cover;
 }
 
+/*base.html*/
+
 /*header style*/
 .navbar {
     background-color: rgb(224, 205, 205);
@@ -27,7 +29,42 @@ body {
     margin-bottom: 10px;
 }
 
+/*Hover.css*/
+.button_base:hover {
+    box-shadow: 0 8px 8px 0 rgb(145, 139, 139), 0 1px 10px 0 rgb(96, 1, 1);
+}
 
+
+/*footer style*/
+footer {
+    padding-left: 10px;
+    background-color: rgb(224, 205, 205);
+    margin-top: 7px;
+}
+
+/*The social-links*/
+
+.list-inline-item {
+    margin: 5px;
+    font-size: x-large;
+}
+
+.list-inline {
+    margin-top: 2vh;
+}
+
+h6 {
+    font-weight: 900;
+}
+
+.row {
+    margin-right: calc(0* var(--bs-gutter-x));
+    margin-left: calc(0* var(--bs-gutter-x));
+}
+
+.social_media:hover {
+    color: rgb(50, 44, 10);
+}
 
 /*index page*/
 .main_text {
@@ -62,8 +99,6 @@ body {
     background: url("../images/qqq.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
-    width: 500px;
     margin: 5px;
     object-fit: contain;
     overflow: hidden;
@@ -75,7 +110,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
-    width: 500;
     margin: 5px;
     object-fit: cover;
     overflow: hidden;
@@ -87,7 +121,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
-    width: 500;
     margin: 5px;
     object-fit: cover;
     overflow: hidden;
@@ -96,11 +129,25 @@ body {
 
 .dc {
     background-color: rgba(255, 255, 255, 0.2);
-    line-height: 7vh;
-    font-size: 24px;
-    font-style: italic;
-    ;
+    line-height: 5vh;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/*adding distance in about page for div*/
+#dc_ava {
+    margin: 30px;
+}
+
+#dc_jack {
+    margin: 30px;
+}
+
+#dc_Annalis {
+    margin: 30px;
+}
+
 
 span {
     font-family: Arial, Helvetica, sans-serif;
@@ -142,44 +189,6 @@ a {
     font-size: 18px;
 }
 
-/*footer style*/
-footer {
-    padding-left: 10px;
-    background-color: rgb(224, 205, 205);
-    margin-top: 7px;
-}
-
-/*The social-links*/
-
-.social {}
-
-.list-inline-item {
-    margin: 5px;
-    font-size: medium;
-}
-
-.list-inline {
-    margin-top: 2vh;
-}
-
-h6 {
-    font-weight: 900;
-}
-
-.row {
-    margin-right: calc(0* var(--bs-gutter-x));
-    margin-left: calc(0* var(--bs-gutter-x));
-}
-
-/*Hover.css*/
-a:hover {
-    box-shadow: 0 8px 8px 0 rgb(145, 139, 139), 0 1px 10px 0 rgb(96, 1, 1);
-}
-
-#submit:hover,
-#reset:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 01), 0 17px 50px 0 rgba(0, 0, 0, 1);
-}
 
 /*signin page*/
 

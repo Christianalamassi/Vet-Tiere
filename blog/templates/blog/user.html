@@ -1,47 +1,22 @@
 {% extends "base.html" %}
 {% block content%}
 
-<section>
-    <center>
-        <form id=" appointment" method="POST" action="{% url 'user' %}">
-            {%csrf_token%}
-            <div class="row user">
-                <div class="col-6"></div>
-                <label for="pet_name">Your pet name:</label>
-                <input type="'text" id="pet_name" name="pet_name">
 
-                <label for="date">select day:</label><br>
-                <input type="date" name="date" id="date"><br>
+<div class="main_text">
+    <h2>Vet Tiere, It is one of the best vets clinic in the world. We have more than ten clinic in USA and more than
+        five around the world</h2>
+    <p>Vet Tiere is a prestigious center of research in veterinary medicine and veterinary
+        care services. It is one of ten five clincs in London offering veterinary DBFC and physical therapy for all
+        animls.
+        The research
+        activities of Vet Tiere’s fifty clinical units take an interdisciplinary approach and are part of
+        a worldwide network.
+    </p>
+    <h4>Press here to book an appointemnt</h4>
+    <button<button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="page"
+            href="{% url 'appointment' %}">Appointment</a></button>
 
+</div>
 
-                <label for="time">Schedule you appointment</label>
-                <select class="from-control" name="time">
-                    <option value="8 AM"> 8:00</option>
-                    <option value="9 AM"> 9:00</option>
-                    <option value="10 AM"> 10:00</option>
-                    <option value="11 AM"> 11:00</option>
-                    <option value="12 PM"> 12:00</option>
-                    <option value="1 PM"> 13:00</option>
-                    <option value="2 PM"> 14:00</option>
-                </select>
-
-                <br>
-                <label for="text">Type a brief description here of your pet:</label>
-                <textarea name="text" rows="10" cols="13" placeholder="type here your description"></textarea>
-                <div id="user_input">
-                    <center>
-                        <input type="submit" id="submit" value="Submit">
-                        <input type="reset" id="reset" value="Reset">
-                    </center>
-                </div>
-            </div>
-        </form>
-    </center>
-</section>
-
-
-<center>
-    <div id="cronofy-date-time-picker"></div>
-</center>
 
 {%endblock%}
