@@ -25,13 +25,11 @@ def user(request):
         pet_names = request.POST['pet_name']
         dates = request.POST['date']
         times = request.POST['time']
-        #texts = request.POST['text']
         messages.success(request, 'You have booked an appointment successfully!')
         return render(request, "blog/message.html",{
             'pet_names' : pet_names,
             'dates' : dates,
             'times' : times,})
-            #'texts' : texts})
     else:
         return render(request, "blog/user.html",context)
 
