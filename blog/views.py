@@ -22,11 +22,13 @@ def user(request):
     }
     models = userInfo
     if request.method == 'POST':
+        users = request.Post['user']
         pet_names = request.POST['pet_name']
         dates = request.POST['date']
         times = request.POST['time']
         messages.success(request, 'You have booked an appointment successfully!')
         return render(request, "blog/message.html",{
+            'users' : users,
             'pet_names' : pet_names,
             'dates' : dates,
             'times' : times,})
