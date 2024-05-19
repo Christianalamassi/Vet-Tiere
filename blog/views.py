@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import userInfo
+from .models import UserInfo
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from .forms import userform
 # Create your views here.
 
 # Homepage
@@ -16,11 +17,11 @@ def about(request):
 #Users page
 @login_required
 def user(request):
-    userInfos = userInfo.objects.all()
+    userInfos = UserInfo.objects.all().order_by['data']
     context = {
         'userInfos':userInfos
     }
-    models = userInfo
+    models = UserInfo
     if request.method == 'POST':
         users = request.Post['user']
         pet_names = request.POST['pet_name']
@@ -44,3 +45,6 @@ def delete_booking(request, booking_id):
 def appointment(request):
     return render(request, 'blog/appointment.html')
 
+@login_required
+def message(request):
+    return render(request, 'blog/message.html')

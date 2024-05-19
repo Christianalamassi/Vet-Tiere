@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import userInfo
+from .models import UserInfo
 
-@admin.register(userInfo)
+@admin.register(UserInfo)
 class user_appointment(admin.ModelAdmin):
     list_display = (
         'user', 'pet_name', 'date', 'time',

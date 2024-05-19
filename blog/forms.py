@@ -1,9 +1,12 @@
 from django import forms
-from .models import userInfo
+from .models import UserInfo
 from django.conf import settings
 
 
-class userform(forms.ModelForm): 
+class userform(forms.ModelForm):
+    class Meta:
+        model = UserInfo
+        fields = ['user', 'pet_name', 'time', 'date'] 
     date = forms.DateField(widget=forms.DateInput(attrs={
         'id': 'datePicker', 'class': 'form-control', 'type': 'date'}))
 
@@ -15,6 +18,5 @@ class userform(forms.ModelForm):
         'id': 'Time', 'class': 'form-control', 'type': 'time',
         'step': '3600'}))
 
-    class Meta:
-        model = userInfo
-        fields = ['time', 'date']
+   
+        

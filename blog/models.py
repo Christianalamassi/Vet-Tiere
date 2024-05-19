@@ -5,7 +5,7 @@ from django.conf import settings
 
 # Create your models here.
 
-class userInfo(models.Model):
+class UserInfo(models.Model):
       """Model for booking system"""
       time_options = {
       ("8:00","8:00"),
