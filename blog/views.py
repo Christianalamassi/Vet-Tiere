@@ -16,25 +16,27 @@ def about(request):
 
 #Users page
 @login_required
+@login_required
 def user(request):
-    userInfos = UserInfo.objects.all().order_by['data']
-    context = {
-        'userInfos':userInfos
-    }
     models = UserInfo
     if request.method == 'POST':
+        userInfos = userform(request.POST)
+        if userInfos.is_valid():
+            Info = comment_form.save(commit=False)
+            Info.user = request.user
+            Info.save()
         users = request.Post['user']
         pet_names = request.POST['pet_name']
         dates = request.POST['date']
         times = request.POST['time']
-        messages.success(request, 'You have booked an appointment successfully!')
         return render(request, "blog/message.html",{
             'users' : users,
             'pet_names' : pet_names,
             'dates' : dates,
             'times' : times,})
     else:
-        return render(request, "blog/user.html",context)
+        return render(request, "blog/user.html")
+
 
 @login_required
 def delete_booking(request, booking_id):
