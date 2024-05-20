@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.conf import settings
-
+from django.utils import timezone
 
 # Create your models here.
 
@@ -22,7 +22,6 @@ class UserInfo(models.Model):
       date = models.DateField(blank=False, null=False)
       time = models.CharField(max_length=7, choices=time_options, null=False, blank=False)
       text = models.TextField(blank=True)
-      accepted = models.BooleanField(default=False)
       
       def delete_appointment(self):
             self.delete()

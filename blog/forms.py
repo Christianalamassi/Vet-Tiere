@@ -1,12 +1,13 @@
 from django import forms
 from .models import UserInfo
 from django.conf import settings
+from django.utils import timezone
 
 
 class userform(forms.ModelForm):
     class Meta:
         model = UserInfo
-        fields = ['user', 'pet_name', 'time', 'date'] 
+        fields = ['user', 'pet_name', 'time', 'date','text'] 
         
     date = forms.DateField(widget=forms.DateInput(attrs={
         'id': 'datePicker', 'class': 'form-control', 'type': 'date'}))

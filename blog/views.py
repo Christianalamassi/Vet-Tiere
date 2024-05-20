@@ -15,18 +15,22 @@ def home(request):
 def about(request):
     return render(request, 'blog/about.html')
 
-#Users page
 @login_required
 def user(request):
+    return render(request, 'blog/user.html')
+
+#Users page
+@login_required
+def appointment(request):
     if request.method == 'POST':
-        userInfos = userform(request.POST)
-        if userInfos.is_valid():
-            Info = comment_form.save(commit=False)
-            Info.user = request.user
-            Info.save()
-        return render(request, "blog/message.html", {'userInfos':userInfos})
+        form = userform(request.POST)
+        if form.is_valid():
+            form.save()
+        return render(request, "blog/message.html")
+
     else:
-        return render(request, "blog/user.html")
+        form = userform()
+        return render(request, "blog/appointment.html",{'form':form})
 
 
 @login_required
@@ -34,15 +38,13 @@ def delete_booking(request, Info_id):
     """
     view to delete comment
     """
-    Info = get_object_or_404(Info, id=Info_id, user=request.user)
-    Info.delete()
+    form = get_object_or_404(form, id=form_id, user=request.user)
+    form.delete()
 
     messages.success(request, 'You have deleted your appointment!')
     return redirect('blog/appointment.html')
    
-@login_required
-def appointment(request):
-    return render(request, 'blog/appointment.html')
+
 
 @login_required
 def message(request):
