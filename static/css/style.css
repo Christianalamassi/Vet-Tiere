@@ -96,7 +96,7 @@ h6 {
 
 /*photo of doctors*/
 .doctor-ava {
-    background: url("../images/qqq.jpeg");
+    background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1715958716/static/image/qqq.372a8e6bf3e7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 5px;

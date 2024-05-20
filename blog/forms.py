@@ -7,6 +7,7 @@ class userform(forms.ModelForm):
     class Meta:
         model = UserInfo
         fields = ['user', 'pet_name', 'time', 'date'] 
+        
     date = forms.DateField(widget=forms.DateInput(attrs={
         'id': 'datePicker', 'class': 'form-control', 'type': 'date'}))
 

@@ -16,7 +16,6 @@ def about(request):
 
 #Users page
 @login_required
-@login_required
 def user(request):
     models = UserInfo
     if request.method == 'POST':
@@ -25,15 +24,7 @@ def user(request):
             Info = comment_form.save(commit=False)
             Info.user = request.user
             Info.save()
-        users = request.Post['user']
-        pet_names = request.POST['pet_name']
-        dates = request.POST['date']
-        times = request.POST['time']
-        return render(request, "blog/message.html",{
-            'users' : users,
-            'pet_names' : pet_names,
-            'dates' : dates,
-            'times' : times,})
+        return render(request, "blog/message.html")
     else:
         return render(request, "blog/user.html")
 
@@ -49,4 +40,13 @@ def appointment(request):
 
 @login_required
 def message(request):
-    return render(request, 'blog/message.html')
+    if request.method == 'POST':
+        pet_names = request.POST['pet_name']
+        dates = request.POST['date']
+        times = request.POST['time']
+        return render(request, "blog/message.html",{
+            'pet_names' : pet_names,
+            'dates' : dates,
+            'times' : times,})
+    else:
+        return render(request, "blog/user.html")
