@@ -11,7 +11,7 @@
 
 
 body {
-    background: url("../images/paw-print-941498_640.jpg");
+    background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1715958715/static/image/paw-print-941498_640.a5f490c6dff0.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,7 +106,7 @@ h6 {
 }
 
 .doctor-jack {
-    background: url("../images/ector.jpg");
+    background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1715958713/static/image/ector.b9116dc72c8a.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -117,7 +117,7 @@ h6 {
 }
 
 .doctor-Annalise {
-    background: url("../images/vettsst.jpg");
+    background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1715958717/static/image/vettsst.7328cb9e93be.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
