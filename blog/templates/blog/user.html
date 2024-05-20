@@ -11,9 +11,16 @@
         activities of Vet Tiere’s fifty clinical units take an interdisciplinary approach and are part of
         a worldwide network.
     </p>
+    <br>
+
     <h4>Press here to book an appointemnt</h4>
-    <button<button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="page"
+    <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="page"
             href="{% url 'appointment' %}">Appointment</a></button>
+
+    <h4>Or here to delet an appointment!</h4>
+    {% if user.is_authenticated %}
+    <button class="btn btn-primary btn-lg" Info_id="{{ Info.id }}">Delete</button>
+    {%endif%}
 </div>
 
 

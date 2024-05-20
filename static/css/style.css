@@ -171,7 +171,7 @@ label {
     color: #000000;
 }
 
-input {
+.appointment-button {
     border: 2px solid black;
     font-weight: 200;
     line-height: 25px;

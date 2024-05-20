@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, get_object_or_404,reverse
 from .models import UserInfo
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import userform
@@ -17,22 +18,27 @@ def about(request):
 #Users page
 @login_required
 def user(request):
-    models = UserInfo
     if request.method == 'POST':
         userInfos = userform(request.POST)
         if userInfos.is_valid():
             Info = comment_form.save(commit=False)
             Info.user = request.user
             Info.save()
-        return render(request, "blog/message.html")
+        return render(request, "blog/message.html", {'userInfos':userInfos})
     else:
         return render(request, "blog/user.html")
 
 
 @login_required
-def delete_booking(request, booking_id):
-    booking = get_object_or_404(userInfo, id=booking_id, user=request.user)
-    booking.delete()
+def delete_booking(request, Info_id):
+    """
+    view to delete comment
+    """
+    Info = get_object_or_404(Info, id=Info_id, user=request.user)
+    Info.delete()
+
+    messages.success(request, 'You have deleted your appointment!')
+    return redirect('blog/appointment.html')
    
 @login_required
 def appointment(request):
