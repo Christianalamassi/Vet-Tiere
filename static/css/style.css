@@ -17,6 +17,38 @@ body {
     background-size: cover;
 }
 
+/*Hover.css*/
+.button_base:hover {
+    box-shadow: 0 8px 8px 0 rgb(145, 139, 139), 0 1px 10px 0 rgb(96, 1, 1);
+}
+
+.social_media:hover {
+    color: rgb(138, 119, 15);
+}
+
+
+/*all inputs style*/
+
+input {
+    border: 2px solid black;
+    font-weight: 200;
+    line-height: 25px;
+    font-size: large;
+    padding: 2px 10px;
+}
+
+input:focus {
+    border: 5px double;
+}
+
+a {
+    padding: 0px 25px;
+}
+
+#submit #reset {
+    font-size: 18px;
+}
+
 /*base.html*/
 
 /*header style*/
@@ -28,12 +60,6 @@ body {
     display: flex;
     margin-bottom: 10px;
 }
-
-/*Hover.css*/
-.button_base:hover {
-    box-shadow: 0 8px 8px 0 rgb(145, 139, 139), 0 1px 10px 0 rgb(96, 1, 1);
-}
-
 
 /*footer style*/
 footer {
@@ -62,11 +88,8 @@ h6 {
     margin-left: calc(0* var(--bs-gutter-x));
 }
 
-.social_media:hover {
-    color: rgb(138, 119, 15);
-}
 
-/*index page*/
+/*index and user page*/
 .main_text {
     padding: 25px;
     font-size: 24px;
@@ -127,6 +150,7 @@ h6 {
     position: relative;
 }
 
+/*The text in about page*/
 .dc {
     background-color: rgba(255, 255, 255, 0.2);
     line-height: 5vh;
@@ -150,7 +174,7 @@ h6 {
     margin: 30px;
 }
 
-
+/*the span in about page for the doctors name*/
 span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
@@ -169,26 +193,6 @@ label {
     font-family: fantasy;
     letter-spacing: 2px;
     color: #000000;
-}
-
-input {
-    border: 2px solid black;
-    font-weight: 200;
-    line-height: 25px;
-    font-size: large;
-    padding: 2px 10px;
-}
-
-input:focus {
-    border: 5px double;
-}
-
-a {
-    padding: 0px 25px;
-}
-
-#submit #reset {
-    font-size: 18px;
 }
 
 /*sign-up page*/

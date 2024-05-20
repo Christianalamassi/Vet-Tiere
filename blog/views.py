@@ -51,10 +51,10 @@ def message(request):
     if request.method == 'POST':
         pet_names = request.POST['pet_name']
         dates = request.POST['date']
-        times = request.POST['time']
+        oclocks = request.POST['oclock']
         return render(request, "blog/message.html",{
             'pet_names' : pet_names,
             'dates' : dates,
-            'times' : times,})
+            'oclocks' : oclocks,})
     else:
         return render(request, "blog/user.html")

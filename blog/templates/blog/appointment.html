@@ -4,28 +4,26 @@
 <center>
     <form id=" appointment" method="POST" action="{% url 'message' %}">
         {%csrf_token%}
-        <div class="row user">
-            <div class="col-6">
-                <p><label for={{form.user.id_for_label}}>Your full name:</label>
-                    {{form.user}}</p>
+        <div class=" user">
+            <p><label for="{{form.pet_name.id_for_label}}">Your pet name:</label>
+                {{form.pet_name}}</h4>
 
-                <p><label for="pet_name">Your pet name:</label>
-                    {{form.pet_name}}</h4>
+                <p><label for="date">select day:</label><br>
+                    {{form.date}}</p>
 
-                    <p><label for="date">select day:</label><br>
-                        {{form.date}}</p>
+                <p><label for="time">Schedule you appointment</label>
+                    {{form.oclock}}</p>
 
-                    <p><label for="time">Schedule you appointment</label>
-                        {{form.time}}</p>
-
-                    <p><label for="text">Type a brief description of the pet:</label>
-                        {{form.text}}</p>
-            </div>
+                <p><label for="text">Type a brief description of the pet:</label>
+                    <textarea name="{{form.text.name}}" id="text" rows="10" cols="70"
+                        placeholder="type here your description"></textarea>
+                </p>
         </div>
         <center>
             <input type="submit" id="submit" value="Submit" class="appointment-button">
             <input type="reset" id="reset" value="Reset" class="appointment-button">
         </center>
+    </form>
 </center>
 
 <!-- Delete confirmation modal -->
