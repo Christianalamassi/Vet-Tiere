@@ -15,11 +15,6 @@ def home(request):
 def about(request):
     return render(request, 'book/about.html')
 
-#user page
-@login_required
-def user(request):
-    return render(request, 'book/user.html')
-
 #appointment system
 @login_required
 def appointment(request):
@@ -56,17 +51,4 @@ def delete_booking(request, Info_id):
 
     messages.success(request, 'You have deleted your appointment!')
     return redirect('book/appointment.html')
-
-
-#message page that the user receives after submitting an appointment
-#@login_required
-#def message(request):
-#    if request.method =="POST":
-#        pet_names = request.POST['pet_name']
-#        dates = request.POST['date']
-#        oclocks = request.POST['oclock']
-#    return render(request, "book/message.html",{
-#        'pet_names' : pet_names,
-#        'dates' : dates,
-#        'oclocks' : oclocks,})
 

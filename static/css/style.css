@@ -185,7 +185,7 @@ span {
 /*Form styling*/
 
 form {
-    margin: auto 15vw;
+    margin: 10vh 35vw;
 }
 
 label {
@@ -227,11 +227,6 @@ label {
 
 /*User page*/
 
-.user {
-    width: 50%;
-    text-align: left;
-}
-
 #user_input {
     margin: 2vh auto;
 }
@@ -250,13 +245,13 @@ label {
 /*media queries to medium screen size from 1200px wide and down*/
 @media screen and (max-width:1200px) {
     form {
-        margin: auto 9vw;
+        margin: auto 30vw;
     }
 }
 
-/*media queries to medium screen size from 700px wide and down*/
-@media screen and (max-width:700px) {
+/*media queries to medium screen size from 800px wide and down*/
+@media screen and (max-width:800px) {
     form {
-        margin: auto 0vw;
+        margin: auto 25vw;
     }
 }
