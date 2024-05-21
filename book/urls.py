@@ -9,5 +9,5 @@ urlpatterns = [
     path('about',views.about, name='about'),
     path('userpage',views.user, name='user'),
     path('appointment',views.appointment, name='appointment'),
-    path('message',views.message, name='message'),
+   # path('message',views.message, name='message'),
 ]

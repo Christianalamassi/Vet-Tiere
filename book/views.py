@@ -24,19 +24,23 @@ def user(request):
 @login_required
 def appointment(request):
     if request.method == 'POST':
+        pet_names = request.POST['pet_name']
+        dates = request.POST['date']
+        oclocks = request.POST['oclock']
         form = UserForm(request.POST)
         if form.is_valid():
             print("FORM IS VALID")
             user_info = form.save(commit=False)
             user_info.user = request.user
             user_info.save()
-            print("FORM IS SAVED")
-            return redirect('message')
+
+            return render(request, "book/message.html",{
+            'pet_names' : pet_names,
+            'dates' : dates,
+            'oclocks' : oclocks,})
         else:
-            print("FORM ERRORS: ", form.errors)
             return render(request, 'book/appointment.html', {'form': form})
     else:
-        print("GET METHOD")
         form = UserForm()
         return render(request, 'book/appointment.html', {'form': form})
 
@@ -55,14 +59,14 @@ def delete_booking(request, Info_id):
 
 
 #message page that the user receives after submitting an appointment
-@login_required
-def message(request):
-    if request.method =="POST":
-        pet_names = request.POST['pet_name']
-        dates = request.POST['date']
-        oclocks = request.POST['oclock']
-    return render(request, "book/message.html")#,{
-        #'pet_names' : pet_names,
-        #'dates' : dates,
-        #'oclocks' : oclocks,})
+#@login_required
+#def message(request):
+#    if request.method =="POST":
+#        pet_names = request.POST['pet_name']
+#        dates = request.POST['date']
+#        oclocks = request.POST['oclock']
+#    return render(request, "book/message.html",{
+#        'pet_names' : pet_names,
+#        'dates' : dates,
+#        'oclocks' : oclocks,})
 
