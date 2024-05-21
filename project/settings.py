@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'templates',
     'static',
     'cloudinary',
-    'blog',
+    'book',
 ]
 
 SITE_ID = 1

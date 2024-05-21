@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+<center>
+    <form id="appointment" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <center>
+            <input type="submit" id="submit" value="Book" class="appointment-button" aria-label="book">
+            <input type="reset" id="reset" value="Reset" class="appointment-button" aria-label="reset">
+        </center>
+    </form>
+</center>
+
+<!-- <center>
+    <form id="appointment" method="POST">
+        {% csrf_token %}
+        <div class="user">
+            <p><label for="pet_name">Your pet name:</label>
+                {{ form.pet_name }}</p>
+
+            <p><label for="date">Select day:</label>
+                {{ form.date }}</p>
+
+            <p><label for="oclock">Schedule your appointment:</label>
+                {{ form.oclock }}</p>
+
+            <p><label for="text">Type a brief description of the pet:</label>
+                {{ form.text }}</p>
+        </div>
+        <center>
+            <input type="submit" id="submit" value="Book" class="appointment-button" aria-label="book">
+            <input type="reset" id="reset" value="Reset" class="appointment-button" aria-label="reset">
+        </center>
+    </form>
+</center> -->
+
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete appointment?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete your appointment?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
