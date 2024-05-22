@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404,reverse, redirect
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from .models import UserInfo
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
@@ -24,11 +24,9 @@ def appointment(request):
         oclocks = request.POST['oclock']
         form = UserForm(request.POST)
         if form.is_valid():
-            print("FORM IS VALID")
             user_info = form.save(commit=False)
             user_info.user = request.user
             user_info.save()
-
             return render(request, "book/message.html",{
             'pet_names' : pet_names,
             'dates' : dates,
@@ -39,10 +37,34 @@ def appointment(request):
         form = UserForm()
         return render(request, 'book/appointment.html', {'form': form})
 
+#Edition system
+@login_required
+def edit_appointment(request, pk):
+    user = get_object_or_404(UserInfo, id=pk, user=request.user)
+    if request.method == 'POST':
+        pet_names = request.POST['pet_name']
+        dates = request.POST['date']
+        oclocks = request.POST['oclock']
+        form = UserForm(request.POST, instance=user)
+        if form.is_valid():
+            form.save()
+            return render(request, "book/message.html",{
+            'pet_names' : pet_names,
+            'dates' : dates,
+            'oclocks' : oclocks,})
+
+    else:
+        form = UserForm(instance=booking)
+
+    return render(
+        request, 'edit.html', {'form': form, 'user': user}
+    )
+
+
 
 #deletion system
 @login_required
-def delete_booking(request, Info_id):
+def delete_booking(request):
     """
     view to delete comment
     """

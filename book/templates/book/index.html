@@ -15,14 +15,8 @@
 
     {% if user.is_authenticated %}
     <h4>Press here to book an appointemnt</h4>
-    <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="page"
+    <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="to book an appointment"
             href="{% url 'appointment' %}">Appointment</a></button>
-
-
-    <h4>Or here to edit an appointment!</h4>
-    <button class="btn btn-primary btn-lg" Info_id="{{ Info.id }}">Edit appointment</button>
-    <h4>Or here to delete an appointment!</h4>
-    <button class="btn btn-primary btn-lg" Info_id="{{ Info.id }}">Delete appointment</button>
 
     {%else%}
     <h4>Sign up here to be able to book an appointment</h4>
