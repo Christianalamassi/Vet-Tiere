@@ -40,12 +40,13 @@ def appointment(request):
 #Edition system
 @login_required
 def edit_appointment(request, pk):
-    user = get_object_or_404(UserInfo, id=pk, user=request.user)
+    user = UserInfo.objects.filter(user=request.user).first()
     if request.method == 'POST':
+        form = UserForm(request.POST, instance=user)
+
         pet_names = request.POST['pet_name']
         dates = request.POST['date']
         oclocks = request.POST['oclock']
-        form = UserForm(request.POST, instance=user)
         if form.is_valid():
             form.save()
             return render(request, "book/message.html",{
@@ -54,10 +55,10 @@ def edit_appointment(request, pk):
             'oclocks' : oclocks,})
 
     else:
-        form = UserForm(instance=booking)
+        form = UserForm(instance=user)
 
     return render(
-        request, 'edit.html', {'form': form, 'user': user}
+        request, 'book/edit.html', {'form': form, 'user': user}
     )
 
 

@@ -4,35 +4,36 @@
 
 <center id="messages">
 
-    <p class="message">Your appointment was successfully booked.<br>
-        Your appointment on the {{dates}}.<br>
-        Your appointment at {{oclocks}}.<br>
-        The name of the pet is: {{pet_names}}.
-    </p>
+        <p class="message">Your appointment was successfully booked.<br>
+                Your appointment on the {{dates}}.<br>
+                Your appointment at {{oclocks}}.<br>
+                The name of the pet is: {{pet_names}}.
+        </p>
 </center>
+
 
 <center>
 
-    <h4>Click here to fix the appointment!</h4>
-    <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
-            href="{% url 'edit_appointment' user.id %}">Fix appointment</a>
-    </button>
+        <h4>Click here to fix the appointment!</h4>
+        <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
+                        href="{% url 'edit_appointment' user.id %}">Fix appointment</a>
+        </button>
 
-    <h4>Click here to delete the appointment!</h4>
-    <button class=" btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
-            href="#">Delete</a>
-    </button>
+        <h4>Click here to delete the appointment!</h4>
+        <button class=" btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
+                        href="#">Delete</a>
+        </button>
 
-    <h4>Click here</h4>
-    <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="page"
-            href="{% url 'homepage' %}">Home</a>
-    </button>
+        <h4>Click here</h4>
+        <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="page"
+                        href="{% url 'homepage' %}">Home</a>
+        </button>
 
-    <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="page"
-            href="{% url 'appointment' %}">Appointment</a>
-    </button>
+        <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="page"
+                        href="{% url 'appointment' %}">Appointment</a>
+        </button>
+
 </center>
-
 
 
 {%endblock%}
