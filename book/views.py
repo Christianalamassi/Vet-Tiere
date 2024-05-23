@@ -70,7 +70,6 @@ def edit_appointment(request, pk):
     )
 
 
-
 #deletion system
 @login_required
 def delete_appointment(request,pk):
@@ -81,5 +80,9 @@ def delete_appointment(request,pk):
     user.delete()
 
     messages.success(request, 'You have deleted your appointment!')
-    return HttpResponseRedirect(reverse('appointment'))
+    return HttpResponseRedirect(reverse('homepage'))
 
+#delete_confirmation
+@login_required
+def delete_message(request):
+        return render(request, "book/delete_message.html")
