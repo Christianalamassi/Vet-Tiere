@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block content%}
 
+<!--Main has the main text and button-->
 
+<!--The main text is a small introduction about the clink-->
 <div class="main_text">
     <h2>Vet Tiere, It is one of the best vets clinic in the world according to the reviews. We have collaboration more
         than ten clinic in USA and more than
@@ -14,15 +16,16 @@
         a worldwide network.
     </p>
 
+    <!--Allouth buttons-->
     {% if user.is_authenticated %}
     <h4>Press here to book an appointemnt</h4>
     <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="to book an appointment"
-            href="{% url 'appointment' %}">Appointment</a></button>
+            aria-label="to go to booking panel" href="{% url 'appointment' %}">Appointment</a></button>
 
     {%else%}
     <h4>Sign up here to be able to book an appointment</h4>
     <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="to sign up"
-            href="{% url 'account_signup' %}">Sign-up</a></button>
+            aria-label="to sign up" href="{% url 'account_signup' %}">Sign-up</a></button>
 
     {%endif%}
 </div>

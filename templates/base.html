@@ -52,21 +52,22 @@
 
                         <!--about page link-->
                         <li class="nav-item">
-                            <a class="button_base nav-link active" aria-current="page" aria-label="to about page"
+                            <a class="button_base nav-link active" aria-current="page" aria-label="to about us page"
                                 href="{% url 'about' %}">About-us</a>
                         </li>
                         <!--login or out link-->
                         <!--Allouth for log out or log in-->
                         {% if user.is_authenticated %}
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == logout_url %}active{% endif %}"
-                                aria-current="log out" href="{% url 'account_logout' %}">Logout</a>
+                            <a class="button_base nav-link active {% if request.path == logout_url %}active{% endif %}"
+                                aria-current="log out" aria-label="to log out"
+                                href="{% url 'account_logout' %}">Log-out</a>
                         </li>
                         {% else %}
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == login_url %}active{% endif %}"
-                                aria-current="log in" href="{% url 'account_login' %}">Login</a>
+                            <a class="button_base nav-link active {% if request.path == login_url %}active{% endif %}"
+                                aria-current="log in" aria-label="to log in" href="{% url 'account_login' %}">Log-in</a>
                         </li>
                         {% endif %}
                     </ul>

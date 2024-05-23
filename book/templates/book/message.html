@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block content%}
 
+<!--The main includes messages to users and buttons-->
 
+<!--The message includes information of the user that the user enters it-->
 <center id="messages">
 
         <p class="message">Your appointment was successfully booked.<br>
@@ -11,19 +13,19 @@
         </p>
 </center>
 
-
+<!--buttons for Update or Delete or go to the homepage-->
 <center>
         <h4>Click here to fix or delete your appointment!</h4>
         <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
-                        href="{% url 'edit_appointment' user.id %}">Fix</a>
+                        aria-label="to eidt an appointment" href="{% url 'edit_appointment' user.id %}">Fix</a>
         </button>
         <button class=" btn btn-primary btn-lg"><a class="nav-link active " aria-current="to delete an appointment"
-                        href="{%url 'delete_message' %}">Delete</a>
+                        aria-label="to delete an appointment" href="{%url 'delete_message' %}">Delete</a>
         </button><br>
         <br>
         <h4>Click here to go to homepage</h4>
         <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="go to hompage"
-                        href="{% url 'homepage' %}">Home</a>
+                        aria-label="to go to the homepage" href="{% url 'homepage' %}">Home</a>
         </button>
 
 </center>

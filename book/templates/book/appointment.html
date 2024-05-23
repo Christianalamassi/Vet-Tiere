@@ -3,13 +3,16 @@
 {% block content%}
 
 
-
+<!--Main includes appointment booking panel-->
 <center>
+
+    <!--inputs-->
     <form class="container col-md-7 col-lg-4 appointment" method="POST">
         {% csrf_token %}
         <p><label for="pet_name">Your pet name:</label>
             {{ form.pet_name }}</p>
 
+        <!--error message when the user enters old date-->
         {% if form.errors%}
         {{ form.non_field_errors }}
         {% for field in form %}
@@ -29,6 +32,8 @@
 
         <p><label for="text">Type a brief description of the pet:</label>
             {{ form.text }}</p>
+
+        <!--To submit or to clean the panel-->
         <center>
             <input type="submit" id="submit" value="Book" class="btn btn-primary btn-lg" aria-label="book">
             <input type="reset" id="reset" value="Reset" class="btn btn-primary btn-lg" aria-label="reset">

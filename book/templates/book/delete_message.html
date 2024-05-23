@@ -2,16 +2,19 @@
 
 {%block content%}
 
-
+<!--Main includes a small warning message and two buttons-->
 <center id="confirmation" class="container">
     <p>
+        "You are about to delete your appointment!"<br>
         "Are you sure you want to delete your appointment?"
     </p>
-    <button class=" btn btn-primary btn-lg"><a class="nav-link active " aria-current="to delete an appointment"
-            href="{%url 'homepage'%}">Home</a>
+
+    <!--To confirm the deletion go to the homepage-->
+    <button class=" btn btn-primary btn-lg"><a class="nav-link active " aria-current="to homepage"
+            aria-label="go to homepage" href="{%url 'homepage'%}">Home</a>
     </button>
     <button class=" btn btn-primary btn-lg"><a class="nav-link active " aria-current="to delete an appointment"
-            href="{%url 'delete_appointment' user.id%}">Delete</a>
+            aria-label="to delete an appointment" href="{%url 'delete_appointment' user.id%}">Delete</a>
     </button>
 
 </center>
