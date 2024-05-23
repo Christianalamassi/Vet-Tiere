@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-
+/*The backgraound of the project*/
 body {
     background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1715958715/static/image/paw-print-941498_640.a5f490c6dff0.jpg);
     background-position: center;
@@ -17,7 +17,7 @@ body {
     background-size: cover;
 }
 
-/*Hover.css*/
+/*Hover style*/
 .button_base:hover {
     box-shadow: 0 8px 8px 0 rgb(145, 139, 139), 0 1px 10px 0 rgb(96, 1, 1);
 }
@@ -51,7 +51,7 @@ label {
 
 /*base.html*/
 
-/*header style*/
+/*Header style*/
 .navbar {
     background-color: rgb(224, 205, 205);
     line-height: 35px;
@@ -61,14 +61,14 @@ label {
     margin-bottom: 10px;
 }
 
-/*footer style*/
+/*Footer style*/
 footer {
     padding-left: 10px;
     background-color: rgb(224, 205, 205);
     margin-top: 7px;
 }
 
-/*The social-links*/
+/*The social media-links*/
 
 .list-inline-item {
     margin: 5px;
@@ -83,6 +83,7 @@ h6 {
     font-weight: 900;
 }
 
+/*Fixing the margin of the icon of social media*/
 .row {
     margin-right: calc(0* var(--bs-gutter-x));
     margin-left: calc(0* var(--bs-gutter-x));
@@ -90,6 +91,8 @@ h6 {
 
 
 /*index and user page*/
+
+/*Main text appearance on the index page and user.html page*/
 .main_text {
     padding: 25px;
     font-size: 24px;
@@ -117,6 +120,7 @@ h6 {
 
 /*about page*/
 
+/*title appearance on right side of about page*/
 #funder {
     margin-left: 1vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -167,7 +171,7 @@ h6 {
 }
 
 
-/*adding distance in about page for div*/
+/*Distance in about page for the div for each doctor*/
 #dc_ava {
     margin: 30px;
 }
@@ -205,6 +209,8 @@ span {
     line-height: 10vh;
 }
 
+/*style for the error message appears
+to the users when they enter an old date to book thier appointment */
 #error {
     color: rgb(113, 6, 6)
 }
