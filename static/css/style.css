@@ -262,6 +262,14 @@ span {
         margin-top: 1vh;
         padding: 2.5px;
     }
+
+    .message {
+        font-size: 18px;
+        margin: 12vh auto;
+        width: 100%;
+        text-align: center;
+        line-height: 5vh;
+    }
 }
 
 /*media queries to medium screen size from 750px wide and down*/
@@ -269,6 +277,14 @@ span {
 
     .dc {
         line-height: 2.5vh;
+    }
+
+    .message {
+        font-size: 18px;
+        margin: 10vh auto;
+        width: 100%;
+        text-align: center;
+        line-height: 5vh;
     }
 }
 
