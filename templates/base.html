@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="vet">
-    <meta name="keyword" content="pets, vet, hospital, animal clinic">
+    <meta name="keyword" content="pets, vet, hospital, animal, clinic, sickness, disease">
     <meta name="author" content="Christian Alamassi">
 
     <!--here is the page's icon-->
@@ -31,12 +31,15 @@
 </head>
 
 <body>
+    <!--the header includes the navbar nad the message for notification-->
     <header>
 
+        <!--Navbar includes 3 link Homepage's link and Aboutpage's link and login-->
         {%csrf_token%}
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
+                <!--homepage link-->
                 <a class="button_base navbar-brand home" href="{% url 'homepage' %}"
                     aria-label="to the Homepage">Home</a>
 
@@ -46,10 +49,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+
+                        <!--about page link-->
                         <li class="nav-item">
                             <a class="button_base nav-link active" aria-current="page" aria-label="to about page"
                                 href="{% url 'about' %}">About-us</a>
                         </li>
+                        <!--login or out link-->
+                        <!--Allouth for log out or log in-->
                         {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == logout_url %}active{% endif %}"
@@ -66,6 +73,8 @@
                 </div>
             </div>
         </nav>
+
+        <!--notification message-->
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
@@ -88,16 +97,20 @@
 
 
 
-
+    <!--The footer includes contact and social-media-->
     <footer class="container-fluid">
         <div class="row justify-content-center align-items-center pt-3">
             <center>
                 <div class="social">
+
+                    <!--contact section-->
                     <h6 class="con">E-mail: zyxwv@gmail.com</h6>
                     <h6 class="con">Phone: 000-111-222</h6>
                     <h6 class="con">Phone: 111-222-333</h6>
                     <h6 class="con">Phone: 222-333-444</h6>
                     <h6 class="con">Our address: 000 Str, Texas 12345, USA</h6>
+
+                    <!--social-media section-->
                     <ul class="list-inline social-links">
                         <li class="list-inline-item">
                             <a class="social_media" target="_blank" href="https://www.facebook.com/">
@@ -126,6 +139,7 @@
             </center>
     </footer>
 
+    <!--script for notification message-->
     <script>
         setTimeout(function () {
             let messages = document.getElementById('msg');
@@ -134,7 +148,7 @@
         }, 4000);
     </script>
 
-
+    <!--script.js-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>

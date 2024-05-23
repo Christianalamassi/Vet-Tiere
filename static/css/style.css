@@ -92,7 +92,7 @@ h6 {
 
 /*index and user page*/
 
-/*Main text appearance on the index page and user.html page*/
+/*Main text appearance on the index page*/
 .main_text {
     padding: 25px;
     font-size: 24px;
@@ -107,7 +107,7 @@ h6 {
     animation-fill-mode: backwards;
 }
 
-/* her is zoom mainText in index nad user.html*/
+/* her is zoom mainText in index*/
 @keyframes main_text {
     from {
         transform: scale(0.8);
