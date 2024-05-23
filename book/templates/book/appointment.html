@@ -2,11 +2,24 @@
 {% load static %}
 {% block content%}
 
+
+
 <center>
     <form id="appointment" method="POST">
         {% csrf_token %}
         <p><label for="pet_name">Your pet name:</label>
             {{ form.pet_name }}</p>
+
+        {% if form.errors%}
+        {{ form.non_field_errors }}
+        {% for field in form %}
+        {%for error in field.errors%}
+        <div class="alert alert-danger" role="alert">
+            <h5 id="error">{{ error }}</h5>
+        </div>
+        {%endfor%}
+        {%endfor%}
+        {%endif%}
 
         <p><label for="date">Select day:</label>
             {{ form.date }}</p>
