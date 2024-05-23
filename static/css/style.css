@@ -41,14 +41,6 @@ input:focus {
     border: 5px double;
 }
 
-a {
-    padding: 0px 25px;
-}
-
-#submit #reset {
-    font-size: 18px;
-}
-
 /*base.html*/
 
 /*header style*/
@@ -188,11 +180,7 @@ span {
     font-style: italic;
 }
 
-/*Form styling*/
-    {
-    margin: 10vh 35vw;
-}
-
+/*label styling*/
 label {
     font-size: large;
     font-family: fantasy;
@@ -212,17 +200,14 @@ label {
     margin-right: 1.5vw;
 }
 
-/*signin page*/
-
-.signin {
-    text-align: center;
-}
-
 /*login page*/
+#login {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 
 .login {
     text-align: center;
-    margin: 120px 20vw;
+    margin: 25vh 20vw;
 }
 
 /*logout page*/
