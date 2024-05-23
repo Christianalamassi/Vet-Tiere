@@ -19,6 +19,11 @@ def about(request):
 @login_required
 def appointment(request):
     if request.method == 'POST':
+        
+        """
+        these three variables added for the user's message that they receiv after submition
+        """
+
         pet_names = request.POST['pet_name']
         dates = request.POST['date']
         oclocks = request.POST['oclock']
@@ -43,7 +48,10 @@ def edit_appointment(request, pk):
     user = UserInfo.objects.filter(user=request.user).first()
     if request.method == 'POST':
         form = UserForm(request.POST, instance=user)
-
+        """
+        these three variables added for the user's message that they receiv after submition
+        """
+        
         pet_names = request.POST['pet_name']
         dates = request.POST['date']
         oclocks = request.POST['oclock']
@@ -65,13 +73,13 @@ def edit_appointment(request, pk):
 
 #deletion system
 @login_required
-def delete_booking(request):
+def delete_appointment(request,pk):
     """
-    view to delete comment
+    view to delete appointment
     """
-    form = get_object_or_404(form, id=form_id, user=request.user)
-    form.delete()
+    user = UserInfo.objects.filter(user=request.user).first()
+    user.delete()
 
     messages.success(request, 'You have deleted your appointment!')
-    return redirect('book/appointment.html')
+    return HttpResponseRedirect(reverse('appointment'))
 

@@ -14,23 +14,17 @@
 
 <center>
 
-        <h4>Click here to fix the appointment!</h4>
+        <h4>Click here to fix or delete your appointment!</h4>
         <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
-                        href="{% url 'edit_appointment' user.id %}">Fix appointment</a>
+                        href="{% url 'edit_appointment' user.id %}">Fix</a>
+        </button>
+        <button class=" btn btn-primary btn-lg"><a class="nav-link active " aria-current="to delete an appointment"
+                        href="{%url 'delete_appointment' user.id%}">Delete</a>
         </button>
 
-        <h4>Click here to delete the appointment!</h4>
-        <button class=" btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
-                        href="#">Delete</a>
-        </button>
-
-        <h4>Click here</h4>
-        <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="page"
+        <h4>Click here to go to homepage</h4>
+        <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="go to hompage"
                         href="{% url 'homepage' %}">Home</a>
-        </button>
-
-        <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="page"
-                        href="{% url 'appointment' %}">Appointment</a>
         </button>
 
 </center>
