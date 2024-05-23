@@ -206,8 +206,19 @@ span {
 }
 
 #error {
-    background-color: rgba(241, 12, 12, 0.2);
     color: rgb(113, 6, 6)
+}
+
+/*delete_message.html*/
+#confirmation {
+    margin-top: 15vh;
+    margin-bottom: 35vh;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5vh 5vw;
+    line-height: 10vh;
 }
 
 /*authorization pages*/
