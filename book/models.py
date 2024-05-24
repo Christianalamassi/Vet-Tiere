@@ -28,4 +28,3 @@ class UserInfo(models.Model):
 
       def __str__(self):
             return f'{self.user}: {self.date} at {self.oclock}'
-
