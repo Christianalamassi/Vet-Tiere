@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block content%}
 
-{{ users }}
-
+<!--If the user has an appointment-->
+{% if form %}
 <!--The main includes messages to users and buttons-->
 
 <!--The message includes information of the user that the user enters it-->
@@ -13,6 +13,7 @@
                 Your appointment at {{form.oclock}}.<br>
                 The name of the pet is: {{form.pet_name}}.
         </p>
+
 </center>
 
 <!--buttons for Update or Delete or go to the homepage-->
@@ -25,11 +26,35 @@
                         aria-label="to delete an appointment" href="{%url 'delete_message' %}">Delete</a>
         </button><br>
         <br>
+
         <h4>Click here to go to homepage</h4>
         <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="go to hompage"
                         aria-label="to go to the homepage" href="{% url 'homepage' %}">Home</a>
         </button>
 
-</center>
+        <!--If the user has no appointment-->
+        {% else %}
+        {{empty}}
+        <center>
 
+                <p class="message">It seems That you don't have any appointment at the moment.<br>
+                        Please click on appointment button to book an appointment.
+                </p><br>
+
+
+                <h4>Click here to go to homepage</h4>
+                <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active"
+                                aria-current="go to hompage" aria-label="to go to appointment panel"
+                                href="{% url 'appointment' %}">appointment</a>
+                </button>
+
+                <h4>Click here to go to homepage</h4>
+                <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active"
+                                aria-current="go to hompage" aria-label="to go to the homepage"
+                                href="{% url 'homepage' %}">Home</a>
+                </button>
+        </center>
+        {% endif %}
+
+</center>
 {%endblock%}
