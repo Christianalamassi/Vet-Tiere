@@ -1,15 +1,17 @@
 {% extends "base.html" %}
 {% block content%}
 
+{{ users }}
+
 <!--The main includes messages to users and buttons-->
 
 <!--The message includes information of the user that the user enters it-->
 <center id="messages">
 
         <p class="message">Your appointment was successfully booked.<br>
-                Your appointment on the {{dates}}.<br>
-                Your appointment at {{oclocks}}.<br>
-                The name of the pet is: {{pet_names}}.
+                Your appointment on the {{form.date}}.<br>
+                Your appointment at {{form.oclock}}.<br>
+                The name of the pet is: {{form.pet_name}}.
         </p>
 </center>
 
