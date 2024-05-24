@@ -15,32 +15,28 @@ def home(request):
 def about(request):
     return render(request, 'book/about.html')
 
+#message page
+#Here where the user can find the ifno of the appoinrtment
+def message(request):
+    users=UserInfo.objects.all()
+    return render(request, 'book/message.html', {'users':users})
+
 #appointment system
 @login_required
 def appointment(request):
     if request.method == 'POST':
-        
-        """
-        these three variables added for the user's message that they receiv after submition
-        """
-
-        pet_names = request.POST['pet_name']
-        dates = request.POST['date']
-        oclocks = request.POST['oclock']
         form = UserForm(request.POST)
         if form.is_valid():
             user_info = form.save(commit=False)
             user_info.user = request.user
             user_info.save()
-            return render(request, "book/message.html",{
-            'pet_names' : pet_names,
-            'dates' : dates,
-            'oclocks' : oclocks,})
+            return redirect('message')
         else:
             return render(request, 'book/appointment.html', {'form': form})
     else:
         form = UserForm()
         return render(request, 'book/appointment.html', {'form': form})
+
 
 #Edition system
 @login_required
@@ -48,20 +44,9 @@ def edit_appointment(request, pk):
     user = UserInfo.objects.filter(user=request.user).first()
     if request.method == 'POST':
         form = UserForm(request.POST, instance=user)
-        """
-        these three variables added for the user's message that they receiv after submition
-        """
-        
-        pet_names = request.POST['pet_name']
-        dates = request.POST['date']
-        oclocks = request.POST['oclock']
         if form.is_valid():
             form.save()
-            return render(request, "book/message.html",{
-            'pet_names' : pet_names,
-            'dates' : dates,
-            'oclocks' : oclocks,})
-
+            return redirect('message')
     else:
         form = UserForm(instance=user)
 

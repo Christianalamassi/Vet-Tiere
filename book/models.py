@@ -14,7 +14,7 @@ class UserInfo(models.Model):
             ("13:00 o'clock", "13:00 o'clock"),
             ("14:00 o'clock", "14:00 o'clock")
       )
-      user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
+      user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True)
       pet_name = models.CharField(max_length=50, null=False, blank=False)
       date = models.DateField(blank=False)
       oclock = models.CharField(choices=time_options, max_length=20, null=False, blank=False)
