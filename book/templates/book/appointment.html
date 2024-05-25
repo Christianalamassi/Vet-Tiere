@@ -28,12 +28,12 @@
 
         <!--error message when the user enters old date-->
         {% if form.errors%}
-        {% for field in form %}
+
         {%for errors in field.errors%}
         <div class="alert alert-danger" role="alert">
             <h5 id="error">{{ errors }}</h5>
         </div>
-        {%endfor%}
+
         {%endfor%}
         {%endif%}
 
