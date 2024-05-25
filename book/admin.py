@@ -9,4 +9,3 @@ class user_appointment(admin.ModelAdmin):
     search_fields = ['user', 'pet_name']
     list_filter = ('date',)
     
-
