@@ -15,9 +15,9 @@ class UserInfo(models.Model):
             ("14:00 o'clock", "14:00 o'clock")
       )
       user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
-      pet_name = models.CharField(max_length=50, null=False, blank=False)
-      date = models.DateField(blank=False)
-      oclock = models.CharField(choices=time_options, max_length=20, null=False, blank=False)
+      pet_name = models.CharField(max_length=50, blank=True)
+      date = models.DateField()
+      oclock = models.CharField(choices=time_options, max_length=20, blank=True)
       text = models.TextField(blank=True)
 
       def delete_appointment(self):
@@ -29,14 +29,9 @@ class UserInfo(models.Model):
       def __str__(self):
             return f'{self.user}: {self.date} at {self.oclock}'
 
-
-      
-    
       # This line will render error when the user tries to book more than one appointment
       def clean(self, *args, **kwargs):
-      
-            if not self.pk and UserInfo.objects.exists():
-                  
+            if not self.pk and UserInfo.objects.exists():    
                   raise ValidationError(
                   "It seems that You have already booked an appointment.You can have one appointment at the time"
                   )
@@ -45,5 +40,4 @@ class UserInfo(models.Model):
                   this won't save any data only to update existing date
                   """
                   return None
-
-            return super(UserInfo, self).save(*args, **kwargs)
+            return super(UserInfo, self)
