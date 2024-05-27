@@ -29,12 +29,14 @@ class UserForm(forms.ModelForm):
         self.request = kwargs.pop('request', None)
         super(UserForm, self).__init__(*args, **kwargs)
     
+    # Raising date error for invalid time
     def clean_date(self):
         date = self.cleaned_data.get('date')
         if date < timezone.now().date():
             raise ValidationError('Please make sure that your date in the future.')
         return date
 
+    #Raising  error for making more than one appointment at a time
     def clean(self):
         cleaned_data = super().clean()
         if self.request and self.request.user:
@@ -42,3 +44,12 @@ class UserForm(forms.ModelForm):
             if UserInfo.objects.filter(user=user).exists():
                 raise forms.ValidationError("You already have a booking. Users can have one booking at a time.")
         return cleaned_data
+
+
+    #Raising error for getting two users at the same appointment
+    def clean_oclock(self):
+        oclock = self.cleaned_data.get('oclock')
+        date = self.cleaned_data.get('date')
+        if UserInfo.objects.filter(oclock=oclock).exists() and UserInfo.objects.filter(date=date).exists():
+                raise forms.ValidationError("Oops! This appointment has been taken")
+        return oclock
