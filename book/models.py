@@ -14,7 +14,7 @@ class UserInfo(models.Model):
             ("13:00 o'clock", "13:00 o'clock"),
             ("14:00 o'clock", "14:00 o'clock")
       )
-      user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
+      user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
       pet_name = models.CharField(max_length=50, blank=True)
       date = models.DateField()
       oclock = models.CharField(choices=time_options, max_length=20, blank=True)
@@ -28,3 +28,4 @@ class UserInfo(models.Model):
 
       def __str__(self):
             return f'{self.user}: {self.date} at {self.oclock}'
+

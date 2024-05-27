@@ -23,9 +23,22 @@ class UserForm(forms.ModelForm):
     text = forms.CharField(widget=forms.Textarea(attrs={
         'id': 'text', 'class': 'form-control', 'rows': 3
     }), required=False)
+
+    # Access the request in the form
+    def __init__(self, *args, **kwargs):
+        self.request = kwargs.pop('request', None)
+        super(UserForm, self).__init__(*args, **kwargs)
     
     def clean_date(self):
         date = self.cleaned_data.get('date')
         if date < timezone.now().date():
             raise ValidationError('Please make sure that your date in the future.')
         return date
+
+    def clean(self):
+        cleaned_data = super().clean()
+        if self.request and self.request.user:
+            user = self.request.user
+            if UserInfo.objects.filter(user=user).exists():
+                raise forms.ValidationError("You already have a booking. Users can have one booking at a time.")
+        return cleaned_data

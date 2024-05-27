@@ -25,7 +25,7 @@ def message(request):
 @login_required
 def appointment(request):
     if request.method == 'POST':
-        form = UserForm(request.POST)
+        form = UserForm(request.POST, request=request)
         if form.is_valid():
             user_info = form.save(commit=False)
             user_info.user = request.user
