@@ -28,16 +28,3 @@ class UserInfo(models.Model):
 
       def __str__(self):
             return f'{self.user}: {self.date} at {self.oclock}'
-
-      # This line will render error when the user tries to book more than one appointment
-      def clean(self, *args, **kwargs):
-            if not self.pk and UserInfo.objects.exists():    
-                  raise ValidationError(
-                  "It seems that You have already booked an appointment.You can have one appointment at the time"
-                  )
-
-                  """
-                  this won't save any data only to update existing date
-                  """
-                  return None
-            return super(UserInfo, self)

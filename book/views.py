@@ -18,7 +18,7 @@ def about(request):
 #message page
 #Here where the user can find the ifno of the appoinrtment
 def message(request):
-    form = UserInfo.objects.all().first
+    form = UserInfo.objects.filter(user=request.user).first
     return render(request, 'book/message.html',{'form':form})
 
 #appointment system
