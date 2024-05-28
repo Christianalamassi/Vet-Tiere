@@ -60,14 +60,15 @@
                         {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="button_base nav-link active {% if request.path == logout_url %}active{% endif %}"
-                                aria-current="log out" aria-label="to log out"
+                                aria-current="page" aria-label="to log out"
                                 href="{% url 'account_logout' %}">Log-out</a>
                         </li>
+
                         {% else %}
-                        </li>
+
                         <li class="nav-item">
                             <a class="button_base nav-link active {% if request.path == login_url %}active{% endif %}"
-                                aria-current="log in" aria-label="to log in" href="{% url 'account_login' %}">Log-in</a>
+                                aria-current="page" aria-label="to log in" href="{% url 'account_login' %}">Log-in</a>
                         </li>
                         {% endif %}
                     </ul>
@@ -101,43 +102,42 @@
     <!--The footer includes contact and social-media-->
     <footer class="container-fluid">
         <div class="row justify-content-center align-items-center pt-3">
-            <center>
-                <div class="social">
 
-                    <!--contact section-->
-                    <h6 class="con">E-mail: zyxwv@gmail.com</h6>
-                    <h6 class="con">Phone: 000-111-222</h6>
-                    <h6 class="con">Phone: 111-222-333</h6>
-                    <h6 class="con">Phone: 222-333-444</h6>
-                    <h6 class="con">Our address: 000 Str, Texas 12345, USA</h6>
+            <div class="social">
 
-                    <!--social-media section-->
-                    <ul class="list-inline social-links">
-                        <li class="list-inline-item">
-                            <a class="social_media" target="_blank" href="https://www.facebook.com/">
-                                <i class="fa-brands fa-facebook" aria-hidden="true" aria-label="to facebook"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social_media" target="_blank" href="https://x.com/?lang=en">
-                                <i class="fa-brands fa-x-twitter" aria-hidden="true" aria-label="to twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social_media" target="_blank" href="https://www.youtube.com/">
-                                <i class="fa-brands fa-youtube" aria-hidden="true" aria-label="to youtube"></i>
-                            </a>
-                        </li>
+                <!--contact section-->
+                <h6 class="con" aria-label="email">E-mail: zyxwv@gmail.com</h6>
+                <h6 class="con" aria-label="phone number">Phone: 000-111-222</h6>
+                <h6 class="con" aria-label="phone number">Phone: 111-222-333</h6>
+                <h6 class="con" aria-label="phone number">Phone: 222-333-444</h6>
+                <h6 class="con" aria-label="address">Our address: 000 Str, Texas 12345, USA</h6>
 
-                        <li class="list-inline-item">
-                            <a class="social_media" target="_blank" href="https://www.instagram.com/">
-                                <i class="fa-brands fa-square-instagram" aria-hidden="true"
-                                    aria-label="to instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </center>
+                <!--social-media section-->
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a class="social_media" target="_blank" href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social_media" target="_blank" href="https://x.com/?lang=en">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social_media" target="_blank" href="https://www.youtube.com/">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="social_media" target="_blank" href="https://www.instagram.com/">
+                            <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <!--script for notification message-->

@@ -46,7 +46,7 @@ class UserForm(forms.ModelForm):
         return cleaned_data
 
 
-    #Raising error for getting two users at the same appointment
+    #Raising error for getting two users the same appointment
     def clean_oclock(self):
         oclock = self.cleaned_data.get('oclock')
         date = self.cleaned_data.get('date')

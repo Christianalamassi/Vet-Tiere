@@ -68,7 +68,11 @@ footer {
     margin-top: 7px;
 }
 
+
 /*The social media-links*/
+.social {
+    text-align: center;
+}
 
 .list-inline-item {
     margin: 5px;
@@ -248,7 +252,7 @@ to the users when they enter an old date to book thier appointment */
 
 .login {
     text-align: center;
-    margin: 25vh 20vw;
+    margin: 18vh 20vw;
 }
 
 /*logout.html page*/

@@ -24,7 +24,7 @@ class UserInfo(models.Model):
             self.delete()
 
       class Meta:
-            ordering = ['date']
+            ordering = ['date','oclock']
 
       def __str__(self):
             return f'{self.user}: {self.date} at {self.oclock}'
