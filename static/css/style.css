@@ -256,7 +256,7 @@ to the users when they enter an old date to book thier appointment */
 
 .login {
     text-align: center;
-    margin: 18vh 20vw;
+    margin: 21vh 20vw;
 }
 
 /*logout.html page*/
@@ -321,5 +321,11 @@ to the users when they enter an old date to book thier appointment */
     .main_text {
         font-size: 18px;
         margin: 17vh 17vw;
+    }
+
+    /*added to adjust the login form on the login page*/
+    .row>* {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }

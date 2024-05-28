@@ -117,6 +117,7 @@ The user can access the home page and the About Us page without having a profile
 
 ### Skeleton
 The project uses the ElephentSQL relational database for storing the data.
+There was created just one diagrams for this project.
 
 ### Surface
 - Color palette
@@ -140,3 +141,9 @@ The project uses the ElephentSQL relational database for storing the data.
     - Animation
     - Hover effects
     - Box shadows
+
+
+
+
+    ## Diagram
+    <img src="static/images/ntitlediagram.jpg">
