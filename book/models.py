@@ -4,7 +4,7 @@ from django.utils import timezone
 from django.core.exceptions import ValidationError
 
 class UserInfo(models.Model):
-      """Model for booking system"""
+      """Model for booking system related to :model:`auth.User`."""
       time_options = (
             ("8:00 o'clock", "8:00 o'clock"),
             ("09:00 o'clock", "9:00 o'clock"),

@@ -9,21 +9,38 @@ from .forms import UserForm
 
 # Homepage
 def home(request):
+    """render to hompage"""
     return render(request, 'book/index.html')
 
-#about page
+#about-us page
 def about(request):
+    """render to about us page"""
     return render(request, 'book/about.html')
 
 #message page
-#Here where the user can find the ifno of the appoinrtment
 def message(request):
+    """this displays a message to the user includes info of the appointment.
+    **Template**
+    template:`book/message.html`"""
     form = UserInfo.objects.filter(user=request.user).first
     return render(request, 'book/message.html',{'form':form})
 
 #appointment system
 @login_required
 def appointment(request):
+    """render the panel of the appointment system.
+    allows the users to request 
+    displays an individual instance model:`book.UserInfo`
+    **Context**
+    ``UserInfo``
+    the most recent instence model:`book.UserInfo`
+    ``UserForm``
+    an instence of form:`book.UserForm`
+    **redirect**
+    an instence of view :`book.message`
+    **Template**
+    templat:`book/appointment.html`
+    """
     if request.method == 'POST':
         form = UserForm(request.POST, request=request)
         if form.is_valid():
@@ -41,6 +58,10 @@ def appointment(request):
 #Edition system
 @login_required
 def edit_appointment(request, pk):
+    """displays a panel of the appointment system.
+    allows the users to update
+    **Template**
+    template:`book/edit.html`"""
     user = UserInfo.objects.filter(user=request.user).first()
     if request.method == 'POST':
         form = UserForm(request.POST, instance=user)
@@ -58,9 +79,11 @@ def edit_appointment(request, pk):
 #deletion system
 @login_required
 def delete_appointment(request,pk):
+
+    """displays a panel of the appointment system.
+    allows the users to delete
     """
-    view to delete appointment
-    """
+
     user = UserInfo.objects.filter(user=request.user).first()
     user.delete()
 
@@ -70,4 +93,8 @@ def delete_appointment(request,pk):
 #delete_confirmation
 @login_required
 def delete_message(request):
-        return render(request, "book/delete_message.html")
+    """this displays a message to the user to confirm the deletion.
+    **Template**
+    template:`book/delete_message.html`
+    """
+    return render(request, "book/delete_message.html")

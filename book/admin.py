@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import UserInfo
 
+
 @admin.register(UserInfo)
 class user_appointment(admin.ModelAdmin):
     list_display = (
@@ -8,4 +9,3 @@ class user_appointment(admin.ModelAdmin):
         )
     search_fields = ['user', 'pet_name']
     list_filter = ('date',)
-    
