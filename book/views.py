@@ -1,10 +1,12 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
-from .models import UserInfo
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import UserForm
+from .models import UserInfo
+
+
 # Create your views here.
 
 # Homepage
@@ -12,24 +14,27 @@ def home(request):
     """render to hompage"""
     return render(request, 'book/index.html')
 
-#about-us page
+
+# about-us page
 def about(request):
     """render to about us page"""
     return render(request, 'book/about.html')
 
-#message page
+
+# message page
 def message(request):
     """this displays a message to the user includes info of the appointment.
     **Template**
     template:`book/message.html`"""
     form = UserInfo.objects.filter(user=request.user).first
-    return render(request, 'book/message.html',{'form':form})
+    return render(request, 'book/message.html', {'form': form})
 
-#appointment system
+
+# appointment system
 @login_required
 def appointment(request):
     """render the panel of the appointment system.
-    allows the users to request 
+    allows the users to request
     displays an individual instance model:`book.UserInfo`
     **Context**
     ``UserInfo``
@@ -55,7 +60,7 @@ def appointment(request):
         return render(request, 'book/appointment.html', {'form': form})
 
 
-#Edition system
+# Edition system
 @login_required
 def edit_appointment(request, pk):
     """displays a panel of the appointment system.
@@ -76,9 +81,9 @@ def edit_appointment(request, pk):
     )
 
 
-#deletion system
+# deletion system
 @login_required
-def delete_appointment(request,pk):
+def delete_appointment(request, pk):
 
     """displays a panel of the appointment system.
     allows the users to delete
@@ -90,7 +95,8 @@ def delete_appointment(request,pk):
     messages.success(request, 'You have deleted your appointment!')
     return HttpResponseRedirect(reverse('homepage'))
 
-#delete_confirmation
+
+# delete_confirmation
 @login_required
 def delete_message(request):
     """this displays a message to the user to confirm the deletion.
