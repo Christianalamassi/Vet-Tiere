@@ -169,17 +169,59 @@ The project was deployed with the following steps:
 - Added "DEVELOPMENT" in os.environ to DEBUG in setting.py
 - Also add os.environ['DEVELOPMENT'] = "True" in env.py
 - Push to GitHub.
-- Log in on Heroku and click on the app.
-- Click on the "Settings" tab and then on "Reveal Config Vars".
-- Delete "DISABLE_COLLECTSTATIC = 1" from the list.
-- Add CLOUDINARY_URL = API, DATABASE_URL = API, 
-SECRET_KEY = API to the list.
-- Now click on the tab "Deploy" and then on the button "Deploy Branch" at the bottom of the page.
-- When it's deployed, Click on "Open App" to access the website.
-    - Here is the website [Vet Tier](https://ppfour-633113337389.herokuapp.com/).
+- Setting up Heroku
+    - Go to the Heroku website [Heroku](https://www.heroku.com/)
+    - Login to Heroku and choose Create App
+    - Click New and Create a new app
+    - Choose a name and select your location
+    - Go to the Resources tab
+    - From the Resources list select Heroku Postgres
+    - Navigate to the Deploy tab
+    - Click on Connect to Github and search for your repository
+    - Navigate to the Settings tab
+    - Click on the "Settings" tab and then on "Reveal Config Vars".
+    - Delete "DISABLE_COLLECTSTATIC = 1" from the list.
+    - Add CLOUDINARY_URL = API, DATABASE_URL = API, 
+    SECRET_KEY = API to the list.
+    - Now click on the tab "Deploy" and then on the button "Deploy Branch" at the bottom of the page.
+    - When it's deployed, Click on "Open App" to access the website.
+
+- Here is the website [Vet Tier](https://ppfour-633113337389.herokuapp.com/).
+
 ## Testing
 
+### General Tests
+- The website is tested and works on different screen sizes and is responsive.
+- It is tested and works in several web browsers.
+- All alerts disappear after four seconds.
+- The user can't book an invalid date or multiple appointments.
+- It made sure that each user had their own appointment.
+- The user gets alert messages when they log in or log out.
+- The navigation stays at the top of the page.
 
+### Booking system
+- Backend connected with frontend.
+- It shows a message for the user when they entered an invalid date or multiple appointments or taken an appointment.
+- It takes the user to a confirmation message that includes the information of the appointment.
+- Delete and Edit are functioning 
+- It allows the user to delete, edit, and read the appointment at any time.
+- It gives the user a chance to undelete the appointment after clicking on delete bottom. 
+
+### Authorization
+- Sign-Up
+    - The Sign-Up page works good.
+    - The link to the Log-in page works correctly.
+- Log-in
+    - The Log-in page works good.
+    - The link to the Sign-Up page works correctly.
+    - The user has to enter the user details correctly to be able to log in.
+- Log-out
+    - The Log-out page works good.
+    - The button works good.
+
+### Lighthouse
+
+## Bugs
 
 ## Diagram
 <img src="static/images/ntitlediagram.jpg">
