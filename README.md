@@ -104,7 +104,7 @@ This Project was created for a vet clinic that is useful for clients and staff m
 
 ### Structure
 The user can access the home page and the About Us page without having a profile, but to access the booking system, the user must create an account, then the user will have its own profile so that it can access the booking and booking panel. To schedule an appointment, the user will receive a text message confirming the appointment with the ability to modify or delete the appointment. Also, if the user returns to the home page, they can still come back at any time to edit or delete the appointment.
-<img src="static/images/niagram.drawio (2).png">
+<img src="static/images/diagram.png">
 
 ### Scope
 - Simple and intuitive User Experience.
@@ -128,13 +128,9 @@ There was created just one diagrams for this project.
     - rgb(224, 205, 205)
 
 - Fonts
-    - fantasy
-    - Verdana
-    - Geneva
-    - Tahoma
-    - sans-serif
-    - Arial
-    - Helvetica
+imported from fonts.googleapis [google.font](https://fonts.google.com/)
+    - Verdana, Geneva, Tahoma, sans-serif
+    - Arial, Helvetica
 
 - Visual Effects
     - Flex-box
@@ -142,8 +138,51 @@ There was created just one diagrams for this project.
     - Hover effects
     - Box shadows
 
+## Technologies Used
+- [Python](https://www.python.org/) Used for backend and front end
+- [Heroku](https://dashboard.heroku.com/) Used for deploying the project
+- [GitHub](https://github.com/) Used for hosting the source code of the program
+- [Favicon.io](https://www.favicon.cc/) Used for generating the website favicon
+- [Cloudinary](https://cloudinary.com/) For storing static data
+- [Chrome-Del-Tools](https://developer.chrome.com/docs/devtools/) For debugging the project
+- [W3C HTML Validator](https://validator.w3.org/#validate_by_input) Used for validating the HTML
+- [CI Python Linter](https://pep8ci.herokuapp.com/#) Used to validating Python
+- [Font-Awesome](https://fontawesome.com/) For creating attractive UX with icons
+- [Bootstrap5](https://getbootstrap.com/) For adding predefined styled elements and creating responsiveness
+- [Google-Fonts](https://fonts.google.com/) for typography
+- [JsHint](https://jshint.com/) used for validating the javascript code
+- [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Used for validating the CSS
+- [elephantsql](https://www.elephantsql.com/) Where the DB is storing
+- [Django](https://www.djangoproject.com/) Used as a framework
+- [django-allauth](https://docs.allauth.org/en/latest/) Used for the authorization
+- [gunicorn](https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/gunicorn/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) was used to add the style and layout of the site.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JAVASCRIPT) was used for interaction
+- [Gitpod](https://www.gitpod.io/) Hosted the workspace.
+- [app-diagrams](https://app.diagrams.net/) Used to design the RED
+- [amiresponsive](https://ui.dev/amiresponsive) Used to check responsive screen
+
+## Deployment
+The project was deployed with the following steps:
+
+- Added "DEVELOPMENT" in os.environ to DEBUG in setting.py
+- Also add os.environ['DEVELOPMENT'] = "True" in env.py
+- Push to GitHub.
+- Log in on Heroku and click on the app.
+- Click on the "Settings" tab and then on "Reveal Config Vars".
+- Delete "DISABLE_COLLECTSTATIC = 1" from the list.
+- Add CLOUDINARY_URL = API, DATABASE_URL = API, 
+SECRET_KEY = API to the list.
+- Now click on the tab "Deploy" and then on the button "Deploy Branch" at the bottom of the page.
+- When it's deployed, Click on "Open App" to access the website.
+    - Here is the website [Vet Tier](https://ppfour-633113337389.herokuapp.com/).
+## Testing
 
 
 
-    ## Diagram
-    <img src="static/images/ntitlediagram.jpg">
+## Diagram
+<img src="static/images/ntitlediagram.jpg">
+    
+
+## Credits
