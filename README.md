@@ -189,6 +189,22 @@ The project was deployed with the following steps:
 - Here is the website [Vet Tier](https://ppfour-633113337389.herokuapp.com/).
 
 ## Testing
+I have tested the project by the following points
+
+### Validator Testing
+
+- Python
+    - Passed the code to [PEP8](https://pep8ci.herokuapp.com/#).
+
+- HTML
+    - No errors were returned when passing through the official[ W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fppfour-633113337389.herokuapp.com%2F)
+
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fppfour-633113337389.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- JavaScript
+    - No errors were found when passing through the officia [Jshint validator](https://jshint.com/)
+
 
 ### General Tests
 - The website is tested and works on different screen sizes and is responsive.
