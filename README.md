@@ -255,6 +255,7 @@ I have tested the project by the following points
 
 ### Unfixed bugs
 - The user can't see the available and unavailable appointments before clicking on the date.
+
 -  <img src="static/images/wveeroor.png">
 
 ## Diagram
@@ -267,14 +268,15 @@ I have tested the project by the following points
 - Images on this website are hosted and managed by [Cloudinary](https://cloudinary.com/).
 - Fonts are from [Google-Fonts](https://fontawesome.com/).
 - This website is powered by [Django](https://www.djangoproject.com/).
-- To check representative screen [amiresponsive](https://ui.dev/amiresponsive)
+- To check representative screen [amiresponsive](https://ui.dev/amiresponsive).
 - Used to test JavaScript [JsHint](https://jshint.com/).
 - Used to stor DB [elephantsql](https://www.elephantsql.com/).
 - Used to test CSS [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
 - Used to test HTML code W3 [W3C HTML Validator](https://validator.w3.org/#validate_by_input).
-- Used for [Favicon](https://www.favicon.cc/)
+- Used for [Favicon](https://www.favicon.cc/).
+- Used to design the RED [app-diagrams](https://app.diagrams.net/).
 - Used to check resporesponsive screens [responsiveviewer](https://responsiveviewer.org/)
 - Media
-    - A image taken from [depositphotos](https://depositphotos.com/vectors/vet-cartoon.html).
+    - An image was taken from [depositphotos](https://depositphotos.com/vectors/vet-cartoon.html).
     - Images were taken from [123rf](https://www.123rf.com/).
-    - A image taken from [pixabay](https://pixabay.com/).
+    - An image was taken from [pixabay](https://pixabay.com/).
