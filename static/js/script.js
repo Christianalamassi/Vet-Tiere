@@ -1,7 +1,7 @@
 var messages = document.getElementById('message_alert');
+var alerts = new bootstrap.Alert(messages);
 
 //for notification message
 setTimeout(function () {
-    var alert = new bootstrap.Alert(messages);
-    alert.close();
+    alerts.close();
 }, 4000);

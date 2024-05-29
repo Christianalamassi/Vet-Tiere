@@ -253,10 +253,10 @@ I have tested the project by the following points
 <img src="static/images/we.jpg">
 
 ### Unfixed bugs
-
+- The user can't see the available and unavailable appointments before clicking on the date.
+-  <img src="static/images/wveeroor.png">
 
 ## Diagram
 <img src="static/images/ntitlediagram.jpg">
     
-
 ## Credits
