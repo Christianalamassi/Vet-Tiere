@@ -36,7 +36,7 @@ class UserForm(forms.ModelForm):
         date = self.cleaned_data.get('date')
         if date < timezone.now().date():
             raise ValidationError(
-                'Please make sure that your date in the future.'
+                'Please make sure that your date is in the future.'
             )
         return date
 

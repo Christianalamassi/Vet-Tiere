@@ -4,7 +4,7 @@
 
 
 <!--link to the appointment it is already made-->
-<p id="booked_appointment">Here where you find your booked appointment <a href="{% url 'message'%}"
+<p id="booked_appointment">Find your booked appointment here <a href="{% url 'message'%}"
         aria-label="to your appointment">Booked
         appointment</a></p>
 
@@ -24,7 +24,7 @@
         {%endfor%}
         {%endif%}
 
-        <p><label for="pet_name">Your pet name:</label>
+        <p><label for="pet_name">Name of your pet:</label>
             {{ form.pet_name }}</p>
 
         <!--error message when the user enters old date-->
@@ -44,7 +44,7 @@
         <p><label for="oclock">Schedule your appointment:</label>
             {{ form.oclock }}</p>
 
-        <p><label for="text">Type a brief description of the pet (Optional):</label>
+        <p><label for="text">Give a brief description of your pet (Optional):</label>
             {{ form.text }}</p>
 
         <!--To submit or to clean the panel-->

@@ -9,16 +9,16 @@
 <center id="messages">
 
         <p class="message">Your appointment was successfully booked.<br>
-                Your appointment on the {{form.date}}.<br>
-                Your appointment at {{form.oclock}}.<br>
-                The name of the pet is: {{form.pet_name}}.
+                Your appointment is on: {{form.date}}.<br>
+                Your appointment is at: {{form.oclock}}.<br>
+                Name of your pet: {{form.pet_name}}.
         </p>
 
 </center>
 
 <!--buttons for Update or Delete or go to the homepage-->
 <center>
-        <h4>Click here to fix or delete your appointment!</h4>
+        <h4>Click here to change or delete your appointment</h4>
         <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
                         aria-label="to eidt an appointment" href="{% url 'edit_appointment' user.id %}">Fix</a>
         </button>
@@ -37,8 +37,8 @@
         {{empty}}
         <center>
 
-                <p class="message">It seems That you don't have any appointment at the moment.<br>
-                        Please click on appointment button to book an appointment.
+                <p class="message">It seems that you don't have any booked appointments at the moment.
+                        Please click on the appointment button to book an appointment.
                 </p><br>
 
 
