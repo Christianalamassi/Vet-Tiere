@@ -134,8 +134,7 @@ h6 {
 #doctor-ava {
     background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1715958716/static/image/qqq.372a8e6bf3e7.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
     margin: 5px;
     object-fit: contain;
     overflow: hidden;
@@ -145,8 +144,7 @@ h6 {
 #doctor-jack {
     background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1716459496/istockphoto-1323048732-612x612_vin5wf.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
     margin: 5px;
     object-fit: cover;
     overflow: hidden;
@@ -156,8 +154,7 @@ h6 {
 #doctor-Annalise {
     background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1715958717/static/image/vettsst.7328cb9e93be.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
     margin: 5px;
     object-fit: cover;
     overflow: hidden;
@@ -298,6 +295,14 @@ to the users when they enter an old date to book thier appointment */
         text-align: center;
         line-height: 5vh;
     }
+
+    #dc_jack {
+        margin-bottom: 8vh;
+    }
+
+    #dc_Annalise {
+        margin-top: 8vh;
+    }
 }
 
 /*media queries to medium screen size from 750px wide and down*/
@@ -327,5 +332,17 @@ to the users when they enter an old date to book thier appointment */
     .row>* {
         padding-right: 0px;
         padding-left: 0px;
+    }
+
+    #doctor-ava {
+        height: 300px;
+    }
+
+    #doctor-jack {
+        height: 300px;
+    }
+
+    #doctor-Annalise {
+        height: 300px;
     }
 }
