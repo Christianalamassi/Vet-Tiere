@@ -251,6 +251,7 @@ I have tested the project by the following points
 
 ### Fixed bugs
 <img src="static/images/we.jpg">
+    - The error was solved by deleting the duplicate id.
 
 ### Unfixed bugs
 - The user can't see the available and unavailable appointments before clicking on the date.
@@ -260,3 +261,21 @@ I have tested the project by the following points
 <img src="static/images/ntitlediagram.jpg">
     
 ## Credits
+- inspiration was taken from [Code Institute](https://learn.codeinstitute.net/)
+- Icons are from [Font-Awesome](https://fontawesome.com/).
+- This website uses [Bootstrap](https://getbootstrap.com/).
+- Images on this website are hosted and managed by [Cloudinary](https://cloudinary.com/).
+- Fonts are from [Google-Fonts](https://fontawesome.com/).
+- This website is powered by [Django](https://www.djangoproject.com/).
+- To check representative screen [amiresponsive](https://ui.dev/amiresponsive)
+- Used to test JavaScript[JsHint](https://jshint.com/) used for validating the javascript code
+- Used to stor DB[elephantsql](https://www.elephantsql.com/).
+- Used to test CSS [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/).
+- Used to test HTML code W3[W3C HTML Validator](https://validator.w3.org/#validate_by_input).
+- Used for [Favicon](https://www.favicon.cc/)
+- Used to check resporesponsive screens [responsiveviewer](https://responsiveviewer.org/)
+
+### Media
+- A image taken from [depositphotos](https://depositphotos.com/vectors/vet-cartoon.html).
+- Images were taken from [123rf](https://www.123rf.com/).
+- A image taken from [pixabay](https://pixabay.com/).
