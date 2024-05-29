@@ -195,19 +195,28 @@ I have tested the project by the following points
 
 - Python
     - Passed the code to [PEP8](https://pep8ci.herokuapp.com/#).
+    <img src="static/images/a.jpg">
+    <img src="static/images/c.jpg">
+    <img src="static/images/ff.jpg">
 
 - HTML
     - No errors were returned when passing through the official[ W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fppfour-633113337389.herokuapp.com%2F)
+    <img src="static/images/e.jpg">
+    <img src="static/images/rf.jpg">
+    <img src="static/images/ww.jpg">
 
 - CSS
     - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fppfour-633113337389.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    <img src="static/images/r.png">
 
 - JavaScript
-    - No errors were found when passing through the officia [Jshint validator](https://jshint.com/)
+    - No errors were found when passing through the officia [Jshint validator](https://jshint.com/).
+    <img src="static/images/jsssj.jpg">
 
 
 ### General Tests
 - The website is tested and works on different screen sizes and is responsive.
+    <img src="static/images/scag.png">
 - It is tested and works in several web browsers.
 - All alerts disappear after four seconds.
 - The user can't book an invalid date or multiple appointments.
@@ -236,8 +245,15 @@ I have tested the project by the following points
     - The button works good.
 
 ### Lighthouse
+<img src="static/images/cccapture.jpg">
 
 ## Bugs
+
+### Fixed bugs
+<img src="static/images/we.jpg">
+
+### Unfixed bugs
+
 
 ## Diagram
 <img src="static/images/ntitlediagram.jpg">
