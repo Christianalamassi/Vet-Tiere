@@ -80,7 +80,7 @@ the booking panel when it logged in.
 ## Logout
 When the user is logged in and clicks on "Logout" up on the navigation bar, the user will
 automatically be redirected to this page first. The user receives the question if they are sure
-they want to log out. To log out they click on the button "Logout"
+they want to log out. To log out they click on the button "confirm"
 <img src="static/images/cccccc.jpg">
 
 ## UX

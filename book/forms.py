@@ -48,7 +48,7 @@ class UserForm(forms.ModelForm):
             if UserInfo.objects.filter(user=user).exists():
                 raise forms.ValidationError(
                     "You already have a booking."
-                    "Users can have one booking at a time."
+                    " Users can have one booking at a time."
                 )
         return cleaned_data
 
