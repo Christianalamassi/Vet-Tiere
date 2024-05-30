@@ -152,11 +152,11 @@ h6 {
 }
 
 #doctor-jack {
-    background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1717072884/istockphoto-1323048732-612x612_vin5wf_jack_px73ez.jpg);
+    background: url(https://res.cloudinary.com/dsbcqaevp/image/upload/v1717084927/young-man-veterinarian-doctor-holds-husky-dog-on-examination-table-in-vet-clinic-vector-cartoon-illustration-pets-healthcare-background-domestic-an-PBAGY8_m7boet.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 5px;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden;
     position: relative;
 }
