@@ -104,7 +104,7 @@ This Project was created for a vet clinic that is useful for clients and staff m
 
 ### Structure
 The user can access the home page and the About Us page without having a profile, but to access the booking system, the user must create an account, then the user will have its own profile so that it can access the booking and booking panel. To schedule an appointment, the user will receive a text message confirming the appointment with the ability to modify or delete the appointment. Also, if the user returns to the home page, they can still come back at any time to edit or delete the appointment.
-<img src="static/images/diagram.png">
+<img src="static/images/utitleddiagram.drawio.png">
 
 ### Scope
 - Simple and intuitive User Experience.
