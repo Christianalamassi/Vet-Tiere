@@ -108,7 +108,10 @@ h6 {
     padding: 25px;
     font-size: 24px;
     flex-wrap: nowrap;
-    margin: 20vh 20vw;
+    margin-bottom: 35vh;
+    margin-top: 5vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.4);
 
@@ -248,7 +251,7 @@ to the users when they enter an old date to book thier appointment */
     padding-top: 2vh;
     padding-bottom: 2vh;
     margin-top: 15vh;
-    margin-bottom: 20vh;
+    margin-bottom: 26vh;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
 }
@@ -260,7 +263,10 @@ to the users when they enter an old date to book thier appointment */
 
 .login {
     text-align: center;
-    margin: 21vh 20vw;
+    margin-top: 5vh;
+    margin-bottom: 29vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 /*logout.html page*/
