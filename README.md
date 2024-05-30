@@ -273,6 +273,7 @@ I have tested the project by the following points
 
 ### Unfixed bugs
 - The user can't see the available and unavailable appointments before clicking on the date.
+- Users can book invalid appointments if the date is valid
 
 ## Diagram
 <img src="static/images/ntitlediagram.jpg">
