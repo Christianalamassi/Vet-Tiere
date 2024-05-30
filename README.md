@@ -26,11 +26,11 @@ The project can be accessed at this link [Vet Tier](https://ppfour-633113337389.
 
 ### Home
 It is the main page. It includes an animated paragraph about the history of the clinic. and at the bottom of the paragraph, there is a link to "sign up" of the user is not logged out or a button that takes the user to the appointment panel if the user is logged in.
-<img src="static/images/enshot 2024-05-28 180559.png">
+<img src="static/images/enshot 2024-05-28 180559.jpg">
 
 ## About us
 It is available to everyone, either they have an account or not. It gives the user a short introduction to the doctors. This page was made to introduce the vets to give a chance to the user either to be client or not. 
-<img src="static/images/oiuoiuo.jpg">
+<img src="static/images/oiuoiuo.png">
 
 ## appointment panel
 
