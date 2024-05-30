@@ -314,6 +314,9 @@ to the users when they enter an old date to book thier appointment */
 
 /*media queries to medium screen size from 750px wide and down*/
 @media screen and (max-width:750px) {
+    .main_text {
+        margin: 20vh 15vw;
+    }
 
     .dc {
         line-height: 2.5vh;
@@ -332,7 +335,7 @@ to the users when they enter an old date to book thier appointment */
 @media screen and (max-width:580px) {
     .main_text {
         font-size: 18px;
-        margin: 17vh 17vw;
+        margin: 17vh 10vw;
     }
 
     /*added to adjust the login form on the login page*/
