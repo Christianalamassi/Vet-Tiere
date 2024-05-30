@@ -213,8 +213,9 @@ I have tested the project by the following points
     - No errors were found when passing through the officia [Jshint validator](https://jshint.com/).
     <img src="static/images/jsssj.jpg">
 
+### Manually checking
 
-### General Tests
+#### General Tests
 - The website is tested and works on different screen sizes and is responsive.
     <img src="static/images/scag.png">
 - It is tested and works in several web browsers.
@@ -224,7 +225,7 @@ I have tested the project by the following points
 - The user gets alert messages when they log in or log out.
 - The navigation stays at the top of the page.
 
-### Booking system
+#### Booking system
 - Backend connected with frontend.
 - It shows a message for the user when they entered an invalid date or multiple appointments or taken an appointment.
 - It takes the user to a confirmation message that includes the information of the appointment.
@@ -232,7 +233,7 @@ I have tested the project by the following points
 - It allows the user to delete, edit, and read the appointment at any time.
 - It gives the user a chance to undelete the appointment after clicking on delete bottom. 
 
-### Authorization
+#### Authorization
 - Sign-Up
     - The Sign-Up page works good.
     - The link to the Log-in page works correctly.
