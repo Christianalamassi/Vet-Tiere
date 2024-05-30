@@ -1,4 +1,4 @@
-# Vet Tier - Booking system
+# Vet Tiere - Booking system
 
 ## Overview
 
