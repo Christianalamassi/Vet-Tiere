@@ -18,7 +18,7 @@
 
 <!--buttons for Update or Delete or go to the homepage-->
 <center>
-        <h4>Click here to change or delete your appointment</h4>
+        <p class="click">Click here to change or delete your appointment</p>
         <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
                         aria-label="to eidt an appointment" href="{% url 'edit_appointment' user.id %}">Fix</a>
         </button>
@@ -27,7 +27,7 @@
         </button><br>
         <br>
 
-        <h4>Click here to go to homepage</h4>
+        <p class="click">Click here to go to homepage</p>
         <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active" aria-current="go to hompage"
                         aria-label="to go to the homepage" href="{% url 'homepage' %}">Home</a>
         </button>
@@ -42,13 +42,13 @@
                 </p><br>
 
 
-                <h4>Click here to go to homepage</h4>
+                <p class="click">Click here to go to homepage</p>
                 <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active"
                                 aria-current="go to hompage" aria-label="to go to appointment panel"
                                 href="{% url 'appointment' %}">appointment</a>
                 </button>
 
-                <h4>Click here to go to homepage</h4>
+                <p class="click">Click here to go to homepage</p>
                 <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active"
                                 aria-current="go to hompage" aria-label="to go to the homepage"
                                 href="{% url 'homepage' %}">Home</a>

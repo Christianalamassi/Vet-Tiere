@@ -17,6 +17,13 @@ body {
     background-size: cover;
 }
 
+/*Statement at the top of the buttons*/
+.click {
+    color: rgb(85, 72, 72);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
 /*Hover style*/
 .button_base:hover {
     box-shadow: 0 8px 8px 0 rgb(145, 139, 139), 0 1px 10px 0 rgb(96, 1, 1);
