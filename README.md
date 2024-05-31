@@ -114,6 +114,8 @@ decide whether to be a client or not.
     - As an admin I can create, read, update, and delete the bookings so that I can manage the booking system.
     - As a user I can sign up so that I can have my own profile.
 
+<img src="static/images/all.jpg">
+
 ### Structure
 The user can access the home page and the About Us page without having a profile, but to
 access the booking system, the user must create an account. Then the user will have their
@@ -274,11 +276,12 @@ I have tested the project by the following points
 ## Bugs
 
 ### Fixed bugs
-<img src="static/images/we.jpg">
-    - The error was solved by deleting the duplicate id.
+- The error was solved by deleting the duplicate id.
+    <img src="static/images/we.jpg">
 
-<img scr="static/images/qsdfv.png">
-    - The elements were unclear. It was fixed by adding background.     
+- The elements were unclear. It was fixed by adding background. 
+    <img src="static/images/vfrty.jpg"> 
+    <img src="static/images/qsdfv.png">   
 
 ### Unfixed bugs
 - The user can't see the available and unavailable appointments before clicking on the date.
