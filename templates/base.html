@@ -59,6 +59,11 @@
                         <!--Allouth for log out or log in-->
                         {% if user.is_authenticated %}
                         <li class="nav-item">
+                            <a a class="button_base nav-link active aria-current=" page"
+                                aria-label="to go to booking panel" href="{% url 'appointment' %}">Appointment</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="button_base nav-link active {% if request.path == logout_url %}active{% endif %}"
                                 aria-current="page" aria-label="to log out"
                                 href="{% url 'account_logout' %}">Log-out</a>

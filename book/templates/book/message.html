@@ -17,7 +17,7 @@
 </center>
 
 <!--buttons for Update or Delete or go to the homepage-->
-<center>
+<center class="center">
         <p class="click">Click here to change or delete your appointment</p>
         <button class="btn btn-primary btn-lg"><a class="nav-link active " aria-current="to eidt an appointment"
                         aria-label="to eidt an appointment" href="{% url 'edit_appointment' user.id %}">Change</a>
@@ -35,14 +35,13 @@
         <!--If the user has no appointment-->
         {% else %}
         {{empty}}
-        <center>
-
+        <center class="center">
                 <p class="message">It seems that you don't have any booked appointments at the moment.
                         Please click on the appointment button to book an appointment.
                 </p><br>
 
 
-                <p class="click">Click here to go to homepage</p>
+                <p class="click">Click here to make an appointment</p>
                 <button type="button" class="btn btn-primary btn-lg"><a class="nav-link active"
                                 aria-current="go to hompage" aria-label="to go to appointment panel"
                                 href="{% url 'appointment' %}">appointment</a>

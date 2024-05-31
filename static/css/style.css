@@ -206,6 +206,8 @@ span {
 /*appointment.html page*/
 #booked_appointment {
     margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 55vw;
 }
 
 .appointment {
@@ -222,6 +224,10 @@ span {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5vh 5vw;
     line-height: 10vh;
+}
+
+.center {
+    margin-bottom: 10vh;
 }
 
 /*style for the error message appears
@@ -257,16 +263,11 @@ to the users when they enter an old date to book thier appointment */
 }
 
 /*login.html page*/
-#login {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
 .login {
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 29vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /*logout.html page*/
