@@ -11,11 +11,11 @@ any user with an account. The admins have special permissions for controlling th
 website was made for real life simulation, although the vet doesn&#39;t exist in real life. The web
 site was developed using HTML, CSS, JS, Python &quot;Django&quot; and data are stored in an Elephant
 SQL database.
-The project can be accessed through this link [Vet Tier](https://ppfour-633113337389.herokuapp.com/).
+The project can be accessed through this link [Vet Tiere](https://ppfour-633113337389.herokuapp.com/).
 
 ## Features
 
- Some elements appear on all of the pages of the website, like navbar, background and the footer.
+ Some elements appear on all of the pages of the website, like navbar and the footer.
 
 - Navbar
     - The navigation is fixed at the top of the page and esay to use. It includs three buttons "Home","About-us" and either "log out" when the user logged out or "log in" when the user logged in.
@@ -85,6 +85,10 @@ they want to log out. To log out they click on the button "confirm"
 
 ## UX
 ### Strategy
+- Project Goal
+
+This Project was created for a vet clinic that is useful for clients and staff members.
+
 - User story
 
 The purpose of the project is to give the possibility for the clients to book an appointment to
@@ -110,10 +114,6 @@ decide whether to be a client or not.
     - As an admin I can create, read, update, and delete the bookings so that I can manage the booking system.
     - As a user I can sign up so that I can have my own profile.
 
-- Project Goal
-
-This Project was created for a vet clinic that is useful for clients and staff members.
-
 ### Structure
 The user can access the home page and the About Us page without having a profile, but to
 access the booking system, the user must create an account. Then the user will have their
@@ -137,6 +137,12 @@ The project uses the ElephentSQL relational database for storing the data. There
 one diagram created for this project.
 
 ### Surface
+- Visual Effects
+    - Flex-box
+    - Animation
+    - Hover effects
+    - Box shadows
+
 - Color palette
     - rgba(255, 255, 255, 0.4)
     - rgb(224, 205, 205)
@@ -148,12 +154,6 @@ one diagram created for this project.
 imported from fonts.googleapis [google.font](https://fonts.google.com/)
     - Verdana, Geneva, Tahoma, sans-serif
     - Arial, Helvetica
-
-- Visual Effects
-    - Flex-box
-    - Animation
-    - Hover effects
-    - Box shadows
 
 ## Technologies Used
 - [Python](https://www.python.org/) Used for back end and front end
@@ -203,7 +203,7 @@ The project was deployed with the following steps:
     - Now click on the tab "Deploy" and then on the button "Deploy Branch" at the bottom of the page.
     - When it's deployed, Click on "Open App" to access the website.
 
-- Here is the website [Vet Tier](https://ppfour-633113337389.herokuapp.com/).
+- Here is the website [Vet Tiere](https://ppfour-633113337389.herokuapp.com/).
 
 ## Testing
 I have tested the project by the following points
