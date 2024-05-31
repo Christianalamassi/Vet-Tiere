@@ -105,6 +105,7 @@ decide whether to be a client or not.
     - As a user, I can click on the booked appointment link so that I can see my appointment at any time.
     - As a user, I can book an available appointment so that nobody interferes with the appointment.
     - As an admin, I can style the base.HTML page so that I can inherit style to the rest of the HTML pages.
+    - As a user, I can find the appointment bottom in the navbar so that I can access the appointment page without turning back to the main page
     - As a user, I can book, edit, or delete an appointment so that I have flexibility.
     - As a user, I can ignore the deletion so that I have the chance to keep my appointment.
     - As a user I can sign up so that I have an account to be able to book an appointment.
@@ -115,6 +116,8 @@ decide whether to be a client or not.
     - As a user I can sign up so that I can have my own profile.
 
 <img src="static/images/all.jpg">
+
+<img src="static/images/sdsdvfcvbvb.jpg">
 
 ### Structure
 The user can access the home page and the About Us page without having a profile, but to
@@ -158,25 +161,32 @@ imported from fonts.googleapis [google.font](https://fonts.google.com/)
     - Arial, Helvetica
 
 ## Technologies Used
+
+### Languages
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) was used to add the style and layout of the site.
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JAVASCRIPT) was used for interaction
-- [Gitpod](https://www.gitpod.io/) Hosted the workspace.
 - [Python](https://www.python.org/) Used for back end and front end
+
+### Frameworks:
+- [Django](https://www.djangoproject.com/) Used as a framework
+- [Bootstrap5](https://getbootstrap.com/) For adding predefined styled elements and creating 
+
+### Other tools:
+- [Cloudinary](https://cloudinary.com/) For storing static data
+- [Gitpod](https://www.gitpod.io/) Hosted the workspace.
 - [Heroku](https://dashboard.heroku.com/) Used for deploying the project
 - [GitHub](https://github.com/) Used for hosting the source code of the program
 - [Favicon.io](https://www.favicon.cc/) Used for generating the website favicon
-- [Cloudinary](https://cloudinary.com/) For storing static data
 - [Chrome-Del-Tools](https://developer.chrome.com/docs/devtools/) For debugging the project
 - [W3C HTML Validator](https://validator.w3.org/#validate_by_input) Used for validating the HTML
 - [CI Python Linter](https://pep8ci.herokuapp.com/#) Used to validating Python
 - [Font-Awesome](https://fontawesome.com/) For creating attractive UX with icons
-- [Bootstrap5](https://getbootstrap.com/) For adding predefined styled elements and creating responsiveness
+responsiveness
 - [Google-Fonts](https://fonts.google.com/) for typography
 - [JsHint](https://jshint.com/) used for validating the javascript code
 - [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Used for validating the CSS
 - [elephantsql](https://www.elephantsql.com/) Where the DB is storing
-- [Django](https://www.djangoproject.com/) Used as a framework
 - [django-allauth](https://docs.allauth.org/en/latest/) Used for the authorization
 - [gunicorn](https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/gunicorn/)
 - [app-diagrams](https://app.diagrams.net/) Used to design the RED
