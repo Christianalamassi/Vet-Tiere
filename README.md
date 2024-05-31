@@ -156,6 +156,10 @@ imported from fonts.googleapis [google.font](https://fonts.google.com/)
     - Arial, Helvetica
 
 ## Technologies Used
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) was used to add the style and layout of the site.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JAVASCRIPT) was used for interaction
+- [Gitpod](https://www.gitpod.io/) Hosted the workspace.
 - [Python](https://www.python.org/) Used for back end and front end
 - [Heroku](https://dashboard.heroku.com/) Used for deploying the project
 - [GitHub](https://github.com/) Used for hosting the source code of the program
@@ -173,10 +177,6 @@ imported from fonts.googleapis [google.font](https://fonts.google.com/)
 - [Django](https://www.djangoproject.com/) Used as a framework
 - [django-allauth](https://docs.allauth.org/en/latest/) Used for the authorization
 - [gunicorn](https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/gunicorn/)
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) was used to add the style and layout of the site.
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JAVASCRIPT) was used for interaction
-- [Gitpod](https://www.gitpod.io/) Hosted the workspace.
 - [app-diagrams](https://app.diagrams.net/) Used to design the RED
 - [amiresponsive](https://ui.dev/amiresponsive) Used to check responsive screen
 
@@ -227,17 +227,26 @@ I have tested the project by the following points
     <img src="static/images/r.png">
 
 - JavaScript
-    - No errors were found when passing through the officia [Jshint validator](https://jshint.com/).
+    - Undefined bootstrap was checked and there are no error [Jshint validator](https://jshint.com/).
     <img src="static/images/jsssj.jpg">
+
+### The website has been tested and works on different screen sizes and is responsive.
+<img src="static/images/scag.png">
+<img src="static/images/gggftrtre.jpg">
+<img src="static/images/cappp.jpg">
+<img src="static/images/casd.jpg">
+
+### Lighthouse
+<img src="static/images/iiiiiiii.jpg">
+<img src="static/images/llllllllleeeee.jpg">
+<img src="static/images/llllllll.jpg">
 
 ### Manually checking
 
 #### General Tests
-- The website has been tested and works on different screen sizes and is responsive.
-    <img src="static/images/scag.png">
 - It has been tested and works in several web browsers such as Firefox and Edge.
 - All alerts disappear after four seconds.
-- The user can&#39;t book an invalid date or multiple appointments.
+- The user can't book an invalid date or multiple appointments.
 - It was made sure that each user had their own appointment.
 - The user gets alert messages when they log in or log out.
 - The navigation stays at the top of the page.
@@ -262,18 +271,17 @@ I have tested the project by the following points
     - The Log-out page works good.
     - The button works good.
 
-### Lighthouse
-<img src="static/images/cccapture.jpg">
-
 ## Bugs
 
 ### Fixed bugs
 <img src="static/images/we.jpg">
     - The error was solved by deleting the duplicate id.
 
+<img scr="static/images/qsdfv.png">
+    - The elements were unclear. It was fixed by adding background.     
+
 ### Unfixed bugs
 - The user can't see the available and unavailable appointments before clicking on the date.
-- Users can book invalid appointments if the date is valid
 
 ## ERD
 <img src="static/images/ntitlediagram.jpg">
