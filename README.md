@@ -228,7 +228,7 @@ imported from fonts.googleapis [google.font](https://fonts.google.com/)
 
     - Navigate to the Deploy tab
     - Click on Connect to Github and search for your repository.
-        - <img scr="static/images/ccv33edg.png">
+        - <img src="static/images/ccv33edg.png">
 
     - Navigate to the Settings tab.
     - Click on the "Settings" tab and then on "Reveal Config Vars".
