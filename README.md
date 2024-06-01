@@ -214,10 +214,10 @@ imported from fonts.googleapis [google.font](https://fonts.google.com/)
     - Go to the Heroku website [Heroku](https://www.heroku.com/).
     - Log in or create a Heroku account.
     - Login to Heroku and choose Create App.
-        - <img src="static/images/okjk.png">
-
-    - Click New and Create a new app.
         - <img src="static/images/qasdfv.png">
+        
+    - Click New and Create a new app.
+        - <img src="static/images/okjk.png">
 
     - Choose a name and select your location.
         - <img src="static/images/create.png">
