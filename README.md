@@ -61,7 +61,7 @@ This page includes:
     - The user receives a confirmation message before the deletion.
     <img src="static/images/fgdgfgdf.jpg">
     - Additionally it includes a Home button, which takes the user to the homepage.
-    <img src="static/images/rfgt.jpg">
+    <img src="static/images/rfgt.png">
 
 <img src="static/images/iiiii.jpg">
 
@@ -115,6 +115,7 @@ decide whether to be a client or not.
     - As an admin I can create, read, update, and delete the bookings so that I can manage the booking system.
     - As a user I can sign up so that I can have my own profile.
 
+Here is the link to [User stories](https://github.com/users/Christianalamassi/projects/13/views/1)
 <img src="static/images/all.jpg">
 
 <img src="static/images/sdsdvfcvbvb.jpg">
@@ -181,8 +182,7 @@ imported from fonts.googleapis [google.font](https://fonts.google.com/)
 - [Chrome-Del-Tools](https://developer.chrome.com/docs/devtools/) For debugging the project
 - [W3C HTML Validator](https://validator.w3.org/#validate_by_input) Used for validating the HTML
 - [CI Python Linter](https://pep8ci.herokuapp.com/#) Used to validating Python
-- [Font-Awesome](https://fontawesome.com/) For creating attractive UX with icons
-responsiveness
+- [Font-Awesome](https://fontawesome.com/) For creating attractive UX with icons responsiveness
 - [Google-Fonts](https://fonts.google.com/) for typography
 - [JsHint](https://jshint.com/) used for validating the javascript code
 - [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Used for validating the CSS
@@ -193,27 +193,57 @@ responsiveness
 - [amiresponsive](https://ui.dev/amiresponsive) Used to check responsive screen
 
 ## Deployment
-The project was deployed with the following steps:
+- Install the dependencies:
+    - Open the terminal window and type:
+        - pip3 install -r requirements.txt.
+        - Create a .gitignore file in the root directory of the project where you should add env.py.
+        - Create a .env file. and added the following.
+        - Added "DEVELOPMENT" in os.environ to DEBUG in setting.py.
+        - Added '.herokuapp.com' in the setting to ALLOWED_HOSTS.
+    - import os:
+        - os.environ['SECRET_KEY'] = 'Add a secret key'.
+        - os.environ['DATABASE_URL'] = 'will be used to connect to the database'.
+        - Also add os.environ['DEVELOPMENT'] = "True" in env.py.
+        - Push to GitHub.
 
-- Added "DEVELOPMENT" in os.environ to DEBUG in setting.py
-- Also add os.environ['DEVELOPMENT'] = "True" in env.py
-- Push to GitHub.
+- Migrate by Run the following commands in a terminal:
+    - python3 manage.py makemigrations.
+    - python3 manage.py migrate.
+
 - Setting up Heroku
-    - Go to the Heroku website [Heroku](https://www.heroku.com/)
-    - Login to Heroku and choose Create App
-    - Click New and Create a new app
-    - Choose a name and select your location
-    - Go to the Resources tab
-    - From the Resources list select Heroku Postgres
+    - Go to the Heroku website [Heroku](https://www.heroku.com/).
+    - Log in or create a Heroku account.
+    - Login to Heroku and choose Create App.
+        - <img src="static/images/okjk.png">
+
+    - Click New and Create a new app.
+        - <img src="static/images/qasdfv.png">
+
+    - Choose a name and select your location.
+        - <img src="static/images/create.png">
+
+    - Go to the Resources tab.
+    - From the Resources list select Heroku Postgres.
+        - <img src="static/images/werfg.png">
+
     - Navigate to the Deploy tab
-    - Click on Connect to Github and search for your repository
-    - Navigate to the Settings tab
+    - Click on Connect to Github and search for your repository.
+        - <img scr="static/images/ccv33edg.png">
+
+    - Navigate to the Settings tab.
     - Click on the "Settings" tab and then on "Reveal Config Vars".
     - Delete "DISABLE_COLLECTSTATIC = 1" from the list.
-    - Add CLOUDINARY_URL = API, DATABASE_URL = API, 
-    SECRET_KEY = API to the list.
-    - Now click on the tab "Deploy" and then on the button "Deploy Branch" at the bottom of the page.
+    - Add CLOUDINARY_URL = API, DATABASE_URL = API, SECRET_KEY = API to the list.
+        - <img src="static/images/tgbhn.png">
+
+    - Now click on the tab "Deploy"
+        - <img src="static/images/capt.jpg">
+
+     and then on the button "Deploy Branch" at the bottom of the page.
+        - <img src="static/images/sccre.png">
+
     - When it's deployed, Click on "Open App" to access the website.
+        - <img src="static/images/werdfgh.png">
 
 - Here is the website [Vet Tiere](https://ppfour-633113337389.herokuapp.com/).
 
@@ -291,10 +321,15 @@ I have tested the project by the following points
 
 - The elements were unclear. It was fixed by adding background. 
     <img src="static/images/vfrty.jpg"> 
-    <img src="static/images/qsdfv.png">   
+    <img src="static/images/qsdfv.png">
+
+- It wasn't clear to the user that they could book only one appointment. It was fixed by adding a message at the top of the page.
+    <img src="static/images/edfgvbb.png">
+
+
 
 ### Unfixed bugs
-- The user can't see the available and unavailable appointments before clicking on the date.
+- The user can't see the available and unavailable appointments before choosing on the date.
 
 ## ERD
 <img src="static/images/ntitlediagram.jpg">
