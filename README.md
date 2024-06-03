@@ -282,6 +282,7 @@ I have tested the project by the following points
 <img src="static/images/iiiiiiii.jpg">
 <img src="static/images/llllllllleeeee.jpg">
 <img src="static/images/llllllll.jpg">
+<img src="static/images/ti.png">
 
 ### Manually checking
 
