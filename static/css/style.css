@@ -234,7 +234,9 @@ span {
 #error {
     margin-top: 15vh;
     margin-bottom: 35vh;
-    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: rgba(255, 255, 255, 0.5);
     color: rgb(180, 17, 17)
 }
 
