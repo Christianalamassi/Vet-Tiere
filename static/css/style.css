@@ -230,6 +230,14 @@ span {
     margin-bottom: 10vh;
 }
 
+/*Error 404*/
+#error {
+    margin-top: 15vh;
+    margin-bottom: 35vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(180, 17, 17)
+}
+
 /*style for the error message appears
 to the users when they enter an old date to book thier appointment */
 #error {
