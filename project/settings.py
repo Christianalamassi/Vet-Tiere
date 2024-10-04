@@ -33,7 +33,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # DEBUG = "DEVELOPMENT" in os.environ
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-christianalama-vettiere-npss709zexd.ws.codeinstitute-ide.net',]
+ALLOWED_HOSTS = ['8000-christianalama-vettiere-npss709zexd.ws.codeinstitute-ide.net',
+'.onrender.com']
 
 
 # Application definition
