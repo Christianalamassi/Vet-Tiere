@@ -1,5 +1,5 @@
 {
-    "name": "components-srcs",
+    "name": "project",
     "description": "Material Design components for Angular",
     "homepage": "https://github.com/angular/components",
     "bugs": "https://github.com/angular/components/issues",
@@ -186,18 +186,17 @@
         "**/https-proxy-agent": "5.0.0",
         "string-width": "4.2.3",
         "wrap-ansi": "7.0.0"
-    },
-    "name": "my-app",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js",
-        "build": "npm run build"
-    },
-    "dependencies": {
-        "express": "^4.17.1"
-    },
-    "engines": {
-        "node": "20.15.1" // Or your desired version
     }
+    // "version": "1.0.0",
+    // "main": "index.js",
+    // "scripts": {
+    //     "start": "node index.js",
+    //     "build": "npm run build"
+    // },
+    // "dependencies": {
+    //     "express": "^4.17.1"
+    // },
+    // "engines": {
+    //     "node": "20.15.1" // Or your desired version
+    // }
 }
