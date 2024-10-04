@@ -20,9 +20,12 @@
         "postsnap": "npm run lintfix --",
         "postlint": "template-oss-check",
         "snap": "tap",
-        "template-oss-apply": "template-oss-apply --force"
+        "template-oss-apply": "template-oss-apply --force",
+        "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
+        "build": "webpack --config=Scripts/config/webpack.prod.js"
     },
     "dependencies": {
+        "express": "^4.21.0",
         "glob": "^10.2.2",
         "json-parse-even-better-errors": "^3.0.0",
         "normalize-package-data": "^6.0.0",
