@@ -186,10 +186,7 @@
         "**/https-proxy-agent": "5.0.0",
         "string-width": "4.2.3",
         "wrap-ansi": "7.0.0"
-    }
-}
-
-{
+    },
     "name": "my-app",
     "version": "1.0.0",
     "main": "index.js",
@@ -199,11 +196,8 @@
     },
     "dependencies": {
         "express": "^4.17.1"
-    }
-}
-
-{
+    },
     "engines": {
-        "node": "14.x" // Or your desired version
+        "node": "16.x" // Or your desired version
     }
 }
