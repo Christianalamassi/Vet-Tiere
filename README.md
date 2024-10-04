@@ -11,7 +11,7 @@ any user with an account. The admins have special permissions for controlling th
 website was made for real life simulation, although the vet doesn&#39;t exist in real life. The web
 site was developed using HTML, CSS, JS, Python &quot;Django&quot; and data are stored in an Elephant
 SQL database.
-The project can be accessed through this link [Vet Tiere](https://ppfour-633113337389.herokuapp.com/).
+The project can be accessed through this link [Vet Tiere](https://vet-tiere.onrender.com/).
 
 ## Features
 
