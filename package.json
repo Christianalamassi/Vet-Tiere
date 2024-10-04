@@ -22,7 +22,7 @@
         "snap": "tap",
         "template-oss-apply": "template-oss-apply --force",
         "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
-        "build": "webpack --config=Scripts/config/webpack.prod.js"
+        "build": "webpack --config Scripts/config/webpack.prod.js"
     },
     "dependencies": {
         "express": "^4.21.0",
