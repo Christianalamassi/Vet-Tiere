@@ -187,16 +187,4 @@
         "string-width": "4.2.3",
         "wrap-ansi": "7.0.0"
     }
-    // "version": "1.0.0",
-    // "main": "index.js",
-    // "scripts": {
-    //     "start": "node index.js",
-    //     "build": "npm run build"
-    // },
-    // "dependencies": {
-    //     "express": "^4.17.1"
-    // },
-    // "engines": {
-    //     "node": "20.15.1" // Or your desired version
-    // }
 }
