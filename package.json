@@ -188,3 +188,16 @@
         "wrap-ansi": "7.0.0"
     }
 }
+
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "build": "npm run build"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
