@@ -4,7 +4,7 @@
 
 <img src="static/images/wwww.jpg">
 
-This project was designed and developed to create a simple and easy method for the clients
+This project is designed and developed to create a simple and easy method for the clients
 to book themselves an appointment. The users are given the possibility to book an
 appointment, change it and delete it at any time. All these functionalities can be accessed by
 any user with an account. The admins have special permissions for controlling the data. The
